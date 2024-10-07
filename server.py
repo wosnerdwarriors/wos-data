@@ -8,7 +8,7 @@ from flask import Flask, send_from_directory, abort
 app = Flask(__name__)
 
 # Whitelisted extensions
-WHITELISTED_EXTENSIONS = {'html', 'json','js', 'png'}
+WHITELISTED_EXTENSIONS = {'html', 'json','js', 'png','css'}
 
 def is_allowed_file(filename):
     # Check if the file has an allowed extension

@@ -6,283 +6,72 @@
     <title>SVS History</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Date Adapter for Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <!-- Custom CSS -->
+    <link href="css/svs-history.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <h1 class="text-center mb-4">SVS History</h1>
 
-        <!-- Search and Select States -->
+        <!-- Search and Select States and Dates -->
         <div class="row mb-4">
+            <!-- State List -->
             <div class="col-md-6">
                 <label for="stateSearch" class="form-label">Search States (Use * for wildcard)</label>
                 <input type="text" id="stateSearch" class="form-control" placeholder="Search for states...">
-            </div>
-            <div class="col-md-6">
-                <label class="form-label">Select State(s)</label>
-                <div class="d-flex">
-                    <button id="addAllBtn" class="btn btn-outline-primary me-2">Add All</button>
-                    <button id="clearAllBtn" class="btn btn-outline-danger me-2">Clear All</button>
+                <div class="d-flex mt-2">
+                    <button id="addAllStatesBtn" class="btn btn-outline-primary me-2">Add All States</button>
+                    <button id="clearAllStatesBtn" class="btn btn-outline-danger">Clear All States</button>
                 </div>
-                <div id="stateSelectContainer" class="mt-3" style="max-height: 200px; overflow-y: auto; border: 1px solid #ced4da; padding: 10px;">
-                    <!-- Checkboxes dynamically populated via JS -->
+                <div id="stateSelectContainer" class="select-list scrollable-list">
+                    <!-- State checkboxes dynamically populated via JS -->
                 </div>
             </div>
-        </div>
 
-        <!-- Filter by Date -->
-        <div class="row mb-4">
+            <!-- Date List -->
             <div class="col-md-6">
-                <label for="startDate" class="form-label">Start Date</label>
-                <input type="date" id="startDate" class="form-control">
-            </div>
-            <div class="col-md-6">
-                <label for="endDate" class="form-label">End Date</label>
-                <input type="date" id="endDate" class="form-control">
-            </div>
-        </div>
-
-        <!-- Filter by Castle/Prep Win or Loss -->
-        <div class="row mb-4">
-            <div class="col-md-3">
-                <input class="form-check-input me-1" type="checkbox" id="wonCastle">
-                <label class="form-check-label" for="wonCastle">Won Castle</label>
-            </div>
-            <div class="col-md-3">
-                <input class="form-check-input me-1" type="checkbox" id="wonPrep">
-                <label class="form-check-label" for="wonPrep">Won Prep</label>
-            </div>
-            <div class="col-md-3">
-                <input class="form-check-input me-1" type="checkbox" id="lostCastle">
-                <label class="form-check-label" for="lostCastle">Lost Castle</label>
-            </div>
-            <div class="col-md-3">
-                <input class="form-check-input me-1" type="checkbox" id="lostPrep">
-                <label class="form-check-label" for="lostPrep">Lost Prep</label>
+                <label for="dateSearch" class="form-label">Search Dates</label>
+                <input type="text" id="dateSearch" class="form-control" placeholder="Search for dates...">
+                <div class="d-flex mt-2">
+                    <button id="addAllDatesBtn" class="btn btn-outline-primary me-2">Add All Dates</button>
+                    <button id="clearAllDatesBtn" class="btn btn-outline-danger">Clear All Dates</button>
+                </div>
+                <div id="dateSelectContainer" class="select-list scrollable-list">
+                    <!-- Date checkboxes dynamically populated via JS -->
+                </div>
             </div>
         </div>
 
-        <!-- Results Table -->
-        <div id="results" class="mb-4">
-            <!-- Dynamic content populated via JS -->
+        <!-- Table Container -->
+        <div class="table-container scrollable-table">
+            <table class="table table-striped">
+                <thead id="tableHead">
+                    <tr>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-controls">
+            <button id="firstPageBtn" class="btn btn-outline-primary">First</button>
+            <button id="prevPageBtn" class="btn btn-outline-primary">Previous</button>
+            <span id="currentPage" class="mx-2">1</span>
+            <button id="nextPageBtn" class="btn btn-outline-primary">Next</button>
+            <button id="lastPageBtn" class="btn btn-outline-primary">Last</button>
         </div>
 
         <!-- Chart Placeholder -->
-        <div id="charts" class="mb-4">
+        <div id="charts" class="chart-container" style="display: none;">
             <!-- Dynamic content populated via JS -->
         </div>
+
+        <!-- JavaScript -->
+        <script src="js/svs-history.js"></script>
     </div>
-
-    <!-- JavaScript Logic -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const stateSearch = document.getElementById('stateSearch');
-            const stateSelectContainer = document.getElementById('stateSelectContainer');
-            const resultsDiv = document.getElementById('results');
-            const chartsDiv = document.getElementById('charts');
-            const addAllBtn = document.getElementById('addAllBtn');
-            const clearAllBtn = document.getElementById('clearAllBtn');
-            let selectedStates = {}; // Track selected states
-            let svsData = {};
-
-            // Load the JSON data from svs-history.json
-            fetch('data/svs-history.json')
-                .then(response => response.json())
-                .then(data => {
-                    svsData = data["svs-data-per-state"];
-                    populateStateSelect();
-                    filterResults();
-                    renderCharts();
-                })
-                .catch(error => console.error('Error loading JSON data:', error));
-
-            // Populate the state select checkboxes
-            function populateStateSelect() {
-                const states = Object.keys(svsData);
-                stateSelectContainer.innerHTML = ''; // Clear previous options
-
-                states.forEach(state => {
-                    const checkbox = document.createElement('input');
-                    checkbox.type = 'checkbox';
-                    checkbox.value = state;
-                    checkbox.id = `state-${state}`;
-                    checkbox.classList.add('form-check-input');
-                    checkbox.checked = selectedStates[state] || false;
-                    checkbox.addEventListener('change', handleStateSelection);
-
-                    const label = document.createElement('label');
-                    label.classList.add('form-check-label');
-                    label.setAttribute('for', `state-${state}`);
-                    label.textContent = `State ${state}`;
-
-                    const div = document.createElement('div');
-                    div.classList.add('form-check');
-                    div.appendChild(checkbox);
-                    div.appendChild(label);
-
-                    stateSelectContainer.appendChild(div);
-                });
-            }
-
-            // Handle state selection changes
-            function handleStateSelection(e) {
-                const state = e.target.value;
-                selectedStates[state] = e.target.checked;
-                filterResults();
-                renderCharts();
-            }
-
-            // Add all states
-            addAllBtn.addEventListener('click', function () {
-                const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
-                checkboxes.forEach(checkbox => {
-                    checkbox.checked = true;
-                    selectedStates[checkbox.value] = true;
-                });
-                filterResults();
-                renderCharts();
-            });
-
-            // Clear all states
-            clearAllBtn.addEventListener('click', function () {
-                const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
-                checkboxes.forEach(checkbox => {
-                    checkbox.checked = false;
-                    selectedStates[checkbox.value] = false;
-                });
-                filterResults();
-                renderCharts();
-            });
-
-            // Search functionality for states
-            stateSearch.addEventListener('input', function () {
-                const searchTerm = stateSearch.value.toLowerCase();
-                const wildcard = searchTerm.includes('*');
-                const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
-
-                checkboxes.forEach(checkbox => {
-                    const stateName = checkbox.nextElementSibling.textContent.toLowerCase();
-                    checkbox.parentElement.style.display = (wildcard || stateName.includes(searchTerm.replace('*', ''))) ? '' : 'none';
-                });
-            });
-
-            // Filter and display results based on selected criteria
-            function filterResults() {
-                resultsDiv.innerHTML = ''; // Clear previous results
-
-                const filteredStates = Object.keys(selectedStates).filter(state => selectedStates[state]);
-                if (filteredStates.length === 0) return;
-
-                const startDate = document.getElementById('startDate').value;
-                const endDate = document.getElementById('endDate').value;
-                const wonCastle = document.getElementById('wonCastle').checked;
-                const wonPrep = document.getElementById('wonPrep').checked;
-                const lostCastle = document.getElementById('lostCastle').checked;
-                const lostPrep = document.getElementById('lostPrep').checked;
-
-                const table = document.createElement('table');
-                table.classList.add('table', 'table-striped');
-                const thead = document.createElement('thead');
-                thead.innerHTML = `
-                    <tr>
-                        <th>State</th>
-                        <th>Date</th>
-                        <th>Opponent</th>
-                        <th>Won Prep</th>
-                        <th>Won Castle</th>
-                    </tr>
-                `;
-                table.appendChild(thead);
-                const tbody = document.createElement('tbody');
-
-                filteredStates.forEach(state => {
-                    const stateData = svsData[state];
-
-                    for (const [date, details] of Object.entries(stateData)) {
-                        // Filter by date range
-                        if (startDate && date < startDate) continue;
-                        if (endDate && date > endDate) continue;
-
-                        // Filter by outcome
-                        if (wonCastle && !details["won-castle"]) continue;
-                        if (wonPrep && !details["won-prep"]) continue;
-                        if (lostCastle && details["won-castle"]) continue;
-                        if (lostPrep && details["won-prep"]) continue;
-
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>State ${state}</td>
-                            <td>${date}</td>
-                            <td>${details['opposition-state']}</td>
-                            <td>${details['won-prep'] ? 'Yes' : 'No'}</td>
-                            <td>${details['won-castle'] ? 'Yes' : 'No'}</td>
-                        `;
-                        tbody.appendChild(row);
-                    }
-                });
-
-                table.appendChild(tbody);
-                resultsDiv.appendChild(table);
-            }
-
-            // Render charts using Chart.js for each selected state
-            function renderCharts() {
-                chartsDiv.innerHTML = ''; // Clear previous charts
-                const filteredStates = Object.keys(selectedStates).filter(state => selectedStates[state]);
-
-                filteredStates.forEach(state => {
-                    const stateData = svsData[state];
-
-                    // Prepare data for the chart
-                    const labels = Object.keys(stateData);
-                    const prepWins = labels.map(date => stateData[date]['won-prep'] ? 1 : 0);
-                    const castleWins = labels.map(date => stateData[date]['won-castle'] ? 1 : 0);
-
-                    // Create a canvas for the chart
-                    const canvas = document.createElement('canvas');
-                    canvas.id = `chart-${state}`;
-                    chartsDiv.appendChild(canvas);
-
-                    // Create the chart
-                    new Chart(canvas, {
-                        type: 'line',
-                        data: {
-                            labels: labels,
-                            datasets: [
-                                {
-                                    label: 'Prep Wins',
-                                    data: prepWins,
-                                    borderColor: 'green',
-                                    fill: false
-                                },
-                                {
-                                    label: 'Castle Wins',
-                                    data: castleWins,
-                                    borderColor: 'blue',
-                                    fill: false
-                                }
-                            ]
-                        },
-                        options: {
-                            responsive: true,
-                            title: {
-                                display: true,
-                                text: `State ${state} SVS History`
-                            },
-                            scales: {
-                                x: {
-                                    type: 'category',
-                                    labels: labels
-                                }
-                            }
-                        }
-                    });
-                });
-            }
-        });
-    </script>
 </body>
 </html>
