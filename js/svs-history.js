@@ -27,10 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (debug) console.log('JSON data loaded:', data);
             svsData = data["svs-data-per-state"];
             collectAllSvsDates();  // Collect all SVS dates from all states
-            populateStateSelect();
+            populateStateSelect();  // Populate the state select box with full state range
             populateDateSelect();
-            selectDefaultDates();  // Select the last 5 dates by default
+            selectDefaultDates();  // Select the last 5 dates by default and reflect in UI
             updatePagination();
+            renderTable();  // Ensure rendering happens after all selections
         })
         .catch(error => console.error('Error loading JSON data:', error));
 
@@ -60,18 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Default: select the last 5 dates
-    function selectDefaultDates() {
-        selectedSvsDates = allSvsDates.slice(-5);  // Select the last 5 dates
-        if (debug) console.log('Default selected dates:', selectedSvsDates);
-        renderTable();
-    }
-
-    // Populate state checkboxes
+    // Determine the full range of states (lowest to highest) and populate the state select
     function populateStateSelect() {
-        const states = Object.keys(svsData);
+        const allStates = Object.keys(svsData).map(Number);  // Convert state keys to numbers
+        const minState = Math.min(...allStates);
+        const maxState = Math.max(...allStates);
+
         stateSelectContainer.innerHTML = '';  // Clear previous options
-        states.forEach(state => {
+
+        // Loop through all possible state numbers between minState and maxState
+        for (let state = minState; state <= maxState; state++) {
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.value = state;
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const label = document.createElement('label');
             label.classList.add('form-check-label');
             label.setAttribute('for', `state-${state}`);
-            label.textContent = `State ${state}`;
+            label.textContent = `State ${state}${svsData[state] ? '' : ' (no data)'}`;  // Add "(no data)" for states without data
 
             const div = document.createElement('div');
             div.classList.add('form-check');
@@ -91,9 +90,25 @@ document.addEventListener('DOMContentLoaded', function () {
             div.appendChild(label);
 
             stateSelectContainer.appendChild(div);
+        }
+
+        if (debug) console.log(`State checkboxes populated for states ${minState} to ${maxState}`);
+    }
+
+    // Default: select the last 5 dates and reflect this in the UI
+    function selectDefaultDates() {
+        selectedSvsDates = allSvsDates.slice(-5);  // Select the last 5 dates
+        if (debug) console.log('Default selected dates:', selectedSvsDates);
+
+        // Ensure these dates are selected in the date selection checkboxes
+        const checkboxes = dateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            if (selectedSvsDates.includes(checkbox.value)) {
+                checkbox.checked = true;
+            }
         });
 
-        if (debug) console.log('State checkboxes populated:', states);
+        renderTable();
     }
 
     // Populate date checkboxes
@@ -171,6 +186,29 @@ document.addEventListener('DOMContentLoaded', function () {
         renderTable();
     });
 
+    // "Add All States" button functionality
+    document.getElementById('addAllStatesBtn').addEventListener('click', () => {
+        const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        selectedStates = {};  // Reset selected states
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+            selectedStates[checkbox.value] = true;  // Add all states
+        });
+        if (debug) console.log('All states added:', selectedStates);
+        renderTable();
+    });
+
+    // "Clear All States" button functionality
+    document.getElementById('clearAllStatesBtn').addEventListener('click', () => {
+        const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        selectedStates = {};  // Clear selected states
+        if (debug) console.log('All states cleared.');
+        renderTable();
+    });
+
     // Render the table with dynamically populated date columns and corresponding state data
     function renderTable() {
         tableBody.innerHTML = ''; // Clear previous table content
@@ -207,12 +245,14 @@ document.addEventListener('DOMContentLoaded', function () {
             stateCell.textContent = `State ${state}`;
             row.appendChild(stateCell);
 
-            // Add date columns with prep and castle results or "no-data" if not available
+            // Add date columns with prep, castle, and opposition results or "no-data" if not available
             selectedSvsDates.forEach(date => {
                 const dateCell = document.createElement('td');
-                const details = stateData[date] || { 'won-prep': 'no-data', 'won-castle': 'no-data' };
-                dateCell.innerHTML = `                    <div class="prep ${details['won-prep'] === 'no-data' ? '' : details['won-prep'] ? 'highlight-yes' : 'highlight-no'}">Prep: ${details['won-prep'] === 'no-data' ? 'no-data' : details['won-prep'] ? 'Yes' : 'No'}</div>
+                const details = stateData[date] || { 'won-prep': 'no-data', 'won-castle': 'no-data', 'opposition-state': 'no-data' };
+                dateCell.innerHTML = `
+                    <div class="prep ${details['won-prep'] === 'no-data' ? '' : details['won-prep'] ? 'highlight-yes' : 'highlight-no'}">Prep: ${details['won-prep'] === 'no-data' ? 'no-data' : details['won-prep'] ? 'Yes' : 'No'}</div>
                     <div class="castle ${details['won-castle'] === 'no-data' ? '' : details['won-castle'] ? 'highlight-yes' : 'highlight-no'}">Castle: ${details['won-castle'] === 'no-data' ? 'no-data' : details['won-castle'] ? 'Yes' : 'No'}</div>
+                    <div class="opposition">Opposition: ${details['opposition-state'] === 'no-data' ? 'no-data' : details['opposition-state']}</div>
                 `;
                 dateCell.classList.add(`date-${date}`);
                 row.appendChild(dateCell);
@@ -271,8 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(checkbox => {
             const label = checkbox.nextElementSibling.textContent.toLowerCase();
-            const wildcardMatch = searchTerm.includes('*') ? new RegExp(searchTerm.replace('*', '.*')) : null;
-            const isVisible = wildcardMatch ? wildcardMatch.test(label) : label.includes(searchTerm);
+            const isVisible = label.includes(searchTerm);
             checkbox.parentElement.style.display = isVisible ? '' : 'none';
         });
         if (debug) console.log('State search updated with term:', searchTerm);
@@ -284,11 +323,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const checkboxes = dateSelectContainer.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(checkbox => {
             const label = checkbox.nextElementSibling.textContent.toLowerCase();
-            const wildcardMatch = searchTerm.includes('*') ? new RegExp(searchTerm.replace('*', '.*')) : null;
-            const isVisible = wildcardMatch ? wildcardMatch.test(label) : label.includes(searchTerm);
+            const isVisible = label.includes(searchTerm);
             checkbox.parentElement.style.display = isVisible ? '' : 'none';
         });
         if (debug) console.log('Date search updated with term:', searchTerm);
     });
 });
-
