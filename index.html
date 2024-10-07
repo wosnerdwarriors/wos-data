@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Markdown to HTML Viewer</title>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+		#content {
+			border: 1px solid #ccc;
+			padding: 20px;
+			background-color: #f9f9f9;
+		}
+	</style>
+</head>
+<body>
+	<h1>README Viewer</h1>
+	<div id="content">Loading...</div>
+
+	<script>
+		// Function to fetch and display README.md
+		async function loadReadme() {
+			try {
+				// Fetch README.md file
+				const response = await fetch('./README.md');
+				const markdown = await response.text();
+
+				// Convert Markdown to HTML
+				const html = marked.parse(markdown);
+
+				// Display the HTML content
+				document.getElementById('content').innerHTML = html;
+			} catch (error) {
+				console.error('Error fetching the README.md file:', error);
+				document.getElementById('content').innerHTML = 'Error loading README.md';
+			}
+		}
+
+		// Load README on page load
+		window.onload = loadReadme;
+	</script>
+</body>
+</html>
+
