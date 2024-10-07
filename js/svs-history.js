@@ -23,6 +23,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (debug) console.log('Debug mode enabled');
 
+    // Add All States button functionality
+    document.getElementById('addAllStatesBtn').addEventListener('click', () => {
+        const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        selectedStates = {};  // Reset selected states
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+            selectedStates[checkbox.value] = true;  // Add all states
+        });
+        if (debug) console.log('All states added:', selectedStates);
+        renderTable();
+    });
+
+    // Clear All States button functionality
+    document.getElementById('clearAllStatesBtn').addEventListener('click', () => {
+        const checkboxes = stateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        selectedStates = {};  // Clear selected states
+        if (debug) console.log('All states cleared.');
+        renderTable();
+    });
+
+    // Add All Dates button functionality
+    document.getElementById('addAllDatesBtn').addEventListener('click', () => {
+        const checkboxes = dateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        selectedSvsDates = [];  // Reset selected dates
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+            selectedSvsDates.push(checkbox.value);  // Add all dates
+        });
+        if (debug) console.log('All dates added:', selectedSvsDates);
+        checkFilterAvailability(); // Check if filters should be enabled/disabled
+        renderTable();
+    });
+
+    // Clear All Dates button functionality
+    document.getElementById('clearAllDatesBtn').addEventListener('click', () => {
+        const checkboxes = dateSelectContainer.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        selectedSvsDates = [];  // Clear selected dates
+        if (debug) console.log('All dates cleared.');
+        checkFilterAvailability(); // Check if filters should be enabled/disabled
+        renderTable();
+    });
+
     // Define function to populate state select box
     function populateStateSelect() {
         const allStates = Object.keys(svsData).map(Number);  // Convert state keys to numbers
@@ -221,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.getElementById('nextPageBtn').addEventListener('click', () => {
-        const totalPages =         Math.ceil(Object.keys(selectedStates).length / statesPerPage);
+        const totalPages = Math.ceil(Object.keys(selectedStates).length / statesPerPage);
         if (currentPage < totalPages) {
             currentPage++;
             updatePagination();
