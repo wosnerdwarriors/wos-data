@@ -16,8 +16,18 @@ def is_allowed_file(filename):
 
 @app.route('/<path:filename>')
 def serve_file(filename):
+    # Check if the path is a directory
+    if os.path.isdir(filename):
+        # If it's a directory, look for index.htm or index.html
+        for index_file in ['index.html', 'index.htm']:
+            index_path = os.path.join(filename, index_file)
+            if os.path.exists(index_path):
+                return send_from_directory(filename, index_file)
+        # If no index file is found, return 404
+        abort(404)
+    
+    # If it's a file, serve it if it's allowed
     if is_allowed_file(filename):
-        # Serve the file if it has a whitelisted extension
         return send_from_directory('.', filename)
     else:
         # Return a 404 if the extension is not allowed
