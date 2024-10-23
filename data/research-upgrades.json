@@ -1,6 +1,5882 @@
 {
-"Growth":{},
-"Economy": {},
+"Growth":{
+    "tooling-up-i": {
+        "row": 1,
+        "name": "Tooling Up I",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 0.4,
+                "power": 2000,
+                "cost": {
+                    "meat": 2700,
+                    "wood": 2700,
+                    "coal": 540,
+                    "iron": 130,
+                    "steel": 160
+                },
+                "research-time-seconds": 2,
+                "requirements": {
+                    "research-items": {},
+                    "buildings": {
+                        "research-center": 1
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 0.4,
+                "power": 2000,
+                "cost": {
+                    "meat": 3700,
+                    "wood": 3700,
+                    "coal": 750,
+                    "iron": 180,
+                    "steel": 220
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 0.5,
+                "power": 2500,
+                "cost": {
+                    "meat": 8100,
+                    "wood": 8100,
+                    "coal": 1600,
+                    "iron": 400,
+                    "steel": 480
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            }
+        }
+    },
+    "ward-expansion-i": {
+        "row": 2,
+        "name": "Ward Expansion I",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 540.0,
+                "power": 1080,
+                "cost": {
+                    "meat": 670,
+                    "wood": 670,
+                    "coal": 130,
+                    "iron": 30,
+                    "steel": 40
+                },
+                "research-time-seconds": 13,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 1
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 540.0,
+                "power": 1080,
+                "cost": {
+                    "meat": 940,
+                    "wood": 940,
+                    "coal": 180,
+                    "iron": 40,
+                    "steel": 50
+                },
+                "research-time-seconds": 20,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 720.0,
+                "power": 1440,
+                "cost": {
+                    "meat": 2000,
+                    "wood": 2000,
+                    "coal": 400,
+                    "iron": 100,
+                    "steel": 120
+                },
+                "research-time-seconds": 54,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            }
+        }
+    },
+    "camp-expansion-i": {
+        "row": 2,
+        "name": "Camp Expansion I",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 2.0,
+                "power": 1300,
+                "cost": {
+                    "meat": 2000,
+                    "wood": 2000,
+                    "coal": 400,
+                    "iron": 100,
+                    "steel": 120
+                },
+                "research-time-seconds": 27,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 1
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 2.0,
+                "power": 1300,
+                "cost": {
+                    "meat": 2800,
+                    "wood": 2800,
+                    "coal": 560,
+                    "iron": 140,
+                    "steel": 160
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 3.0,
+                "power": 1950,
+                "cost": {
+                    "meat": 6000,
+                    "wood": 6000,
+                    "coal": 1200,
+                    "iron": 300,
+                    "steel": 360
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            }
+        }
+    },
+    "tool-enhancement-i": {
+        "row": 3,
+        "name": "Tool Enhancement I",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 0.4,
+                "power": 2000,
+                "cost": {
+                    "meat": 2200,
+                    "wood": 2200,
+                    "coal": 450,
+                    "iron": 110,
+                    "steel": 140
+                },
+                "research-time-seconds": 35,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-i": 1,
+                        "camp-expansion-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 1
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 0.4,
+                "power": 2000,
+                "cost": {
+                    "meat": 3200,
+                    "wood": 3200,
+                    "coal": 640,
+                    "iron": 160,
+                    "steel": 190
+                },
+                "research-time-seconds": 52,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 0.5,
+                "power": 2500,
+                "cost": {
+                    "meat": 6800,
+                    "wood": 6800,
+                    "coal": 1300,
+                    "iron": 340,
+                    "steel": 420
+                },
+                "research-time-seconds": 140,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-i": {
+        "row": 4,
+        "name": "Bandaging I",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.6,
+                "power": 4600,
+                "cost": {
+                    "meat": 6700,
+                    "wood": 6700,
+                    "coal": 1300,
+                    "iron": 330,
+                    "steel": 400
+                },
+                "research-time-seconds": 94,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.6,
+                "power": 4600,
+                "cost": {
+                    "meat": 9400,
+                    "wood": 9400,
+                    "coal": 1800,
+                    "iron": 470,
+                    "steel": 560
+                },
+                "research-time-seconds": 141,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 6.0,
+                "power": 6000,
+                "cost": {
+                    "meat": 20000,
+                    "wood": 20000,
+                    "coal": 4000,
+                    "iron": 1000,
+                    "steel": 1200
+                },
+                "research-time-seconds": 378,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-i": {
+        "row": 4,
+        "name": "Trainer Tools I",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 2.2,
+                "power": 3960,
+                "cost": {
+                    "meat": 5400,
+                    "wood": 5400,
+                    "coal": 1000,
+                    "iron": 270,
+                    "steel": 320
+                },
+                "research-time-seconds": 81,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 2.2,
+                "power": 3960,
+                "cost": {
+                    "meat": 7500,
+                    "wood": 7500,
+                    "coal": 1500,
+                    "iron": 370,
+                    "steel": 440
+                },
+                "research-time-seconds": 121,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 3.0,
+                "power": 5400,
+                "cost": {
+                    "meat": 16000,
+                    "wood": 16000,
+                    "coal": 3200,
+                    "iron": 810,
+                    "steel": 960
+                },
+                "research-time-seconds": 324,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            }
+        }
+    },
+    "command-tactics-i": {
+        "row": 5,
+        "name": "Command Tactics I",
+        "stat": "march-queue",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.0,
+                "power": 2700,
+                "cost": {
+                    "meat": 6700,
+                    "wood": 6700,
+                    "coal": 1300,
+                    "iron": 330,
+                    "steel": 400
+                },
+                "research-time-seconds": 270,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-i": 1,
+                        "trainer-tools-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            }
+        }
+    },
+    "tooling-up-ii": {
+        "row": 6,
+        "name": "Tooling Up II",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 0.6,
+                "power": 3000,
+                "cost": {
+                    "meat": 27000,
+                    "wood": 27000,
+                    "coal": 5400,
+                    "iron": 1300,
+                    "steel": 320
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "command-tactics-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 0.6,
+                "power": 3000,
+                "cost": {
+                    "meat": 37000,
+                    "wood": 37000,
+                    "coal": 7500,
+                    "iron": 1800,
+                    "steel": 440
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 81000,
+                    "wood": 81000,
+                    "coal": 16000,
+                    "iron": 4000,
+                    "steel": 960
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            }
+        }
+    },
+    "ward-expansion-ii": {
+        "row": 7,
+        "name": "Ward Expansion II",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1100.0,
+                "power": 2200,
+                "cost": {
+                    "meat": 6700,
+                    "wood": 6700,
+                    "coal": 1300,
+                    "iron": 330,
+                    "steel": 80
+                },
+                "research-time-seconds": 150,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1100.0,
+                "power": 2200,
+                "cost": {
+                    "meat": 9400,
+                    "wood": 9400,
+                    "coal": 1800,
+                    "iron": 470,
+                    "steel": 110
+                },
+                "research-time-seconds": 225,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 5
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1400.0,
+                "power": 2800,
+                "cost": {
+                    "meat": 20000,
+                    "wood": 20000,
+                    "coal": 4000,
+                    "iron": 1000,
+                    "steel": 240
+                },
+                "research-time-seconds": 600,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            }
+        }
+    },
+    "camp-expansion-ii": {
+        "row": 7,
+        "name": "Camp Expansion II",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 20000,
+                    "wood": 20000,
+                    "coal": 4000,
+                    "iron": 1000,
+                    "steel": 240
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 5.0,
+                "power": 3250,
+                "cost": {
+                    "meat": 28000,
+                    "wood": 28000,
+                    "coal": 5600,
+                    "iron": 1400,
+                    "steel": 330
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 5
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 6.0,
+                "power": 3900,
+                "cost": {
+                    "meat": 60000,
+                    "wood": 60000,
+                    "coal": 12000,
+                    "iron": 3000,
+                    "steel": 720
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            }
+        }
+    },
+    "tool-enhancement-ii": {
+        "row": 8,
+        "name": "Tool Enhancement II",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 0.6,
+                "power": 3000,
+                "cost": {
+                    "meat": 22000,
+                    "wood": 22000,
+                    "coal": 4500,
+                    "iron": 1100,
+                    "steel": 280
+                },
+                "research-time-seconds": 390,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-ii": 1,
+                        "camp-expansion-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 0.6,
+                "power": 3000,
+                "cost": {
+                    "meat": 32000,
+                    "wood": 32000,
+                    "coal": 6400,
+                    "iron": 1600,
+                    "steel": 390
+                },
+                "research-time-seconds": 585,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 7
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 68000,
+                    "wood": 68000,
+                    "coal": 13000,
+                    "iron": 3400,
+                    "steel": 840
+                },
+                "research-time-seconds": 1560,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-ii": {
+        "row": 9,
+        "name": "Bandaging II",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 9.0,
+                "power": 9000,
+                "cost": {
+                    "meat": 67000,
+                    "wood": 67000,
+                    "coal": 13000,
+                    "iron": 3300,
+                    "steel": 800
+                },
+                "research-time-seconds": 1050,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 9.0,
+                "power": 9000,
+                "cost": {
+                    "meat": 94000,
+                    "wood": 94000,
+                    "coal": 18000,
+                    "iron": 4700,
+                    "steel": 1100
+                },
+                "research-time-seconds": 1575,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 12.0,
+                "power": 12000,
+                "cost": {
+                    "meat": 200000,
+                    "wood": 200000,
+                    "coal": 40000,
+                    "iron": 10000,
+                    "steel": 2400
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-ii": {
+        "row": 9,
+        "name": "Trainer Tools II",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.6,
+                "power": 8280,
+                "cost": {
+                    "meat": 54000,
+                    "wood": 54000,
+                    "coal": 10000,
+                    "iron": 2700,
+                    "steel": 640
+                },
+                "research-time-seconds": 900,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.6,
+                "power": 8280,
+                "cost": {
+                    "meat": 75000,
+                    "wood": 75000,
+                    "coal": 15000,
+                    "iron": 3700,
+                    "steel": 890
+                },
+                "research-time-seconds": 1350,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 6.0,
+                "power": 10800,
+                "cost": {
+                    "meat": 160000,
+                    "wood": 160000,
+                    "coal": 32000,
+                    "iron": 8100,
+                    "steel": 1900
+                },
+                "research-time-seconds": 3600,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            }
+        }
+    },
+    "tooling-up-iii": {
+        "row": 10,
+        "name": "Tooling Up III",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 86000,
+                    "wood": 86000,
+                    "coal": 17000,
+                    "iron": 4300,
+                    "steel": 960
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-ii": 1,
+                        "trainer-tools-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 120000,
+                    "wood": 120000,
+                    "coal": 24000,
+                    "iron": 6000,
+                    "steel": 1300
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 250000,
+                    "wood": 250000,
+                    "coal": 51000,
+                    "iron": 12000,
+                    "steel": 2800
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            }
+        }
+    },
+    "ward-expansion-iii": {
+        "row": 11,
+        "name": "Ward Expansion III",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 2200.0,
+                "power": 4400,
+                "cost": {
+                    "meat": 21000,
+                    "wood": 21000,
+                    "coal": 4300,
+                    "iron": 1000,
+                    "steel": 240
+                },
+                "research-time-seconds": 600,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 2200.0,
+                "power": 4400,
+                "cost": {
+                    "meat": 30000,
+                    "wood": 30000,
+                    "coal": 6000,
+                    "iron": 1500,
+                    "steel": 330
+                },
+                "research-time-seconds": 900,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 2900.0,
+                "power": 5800,
+                "cost": {
+                    "meat": 64000,
+                    "wood": 64000,
+                    "coal": 12000,
+                    "iron": 3200,
+                    "steel": 720
+                },
+                "research-time-seconds": 2400,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            }
+        }
+    },
+    "camp-expansion-iii": {
+        "row": 11,
+        "name": "Camp Expansion III",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 4550,
+                "cost": {
+                    "meat": 64000,
+                    "wood": 64000,
+                    "coal": 12000,
+                    "iron": 3200,
+                    "steel": 720
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 7.0,
+                "power": 4550,
+                "cost": {
+                    "meat": 90000,
+                    "wood": 90000,
+                    "coal": 18000,
+                    "iron": 4500,
+                    "steel": 1000
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 5850,
+                "cost": {
+                    "meat": 190000,
+                    "wood": 190000,
+                    "coal": 38000,
+                    "iron": 9700,
+                    "steel": 2100
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            }
+        }
+    },
+    "tool-enhancement-iii": {
+        "row": 12,
+        "name": "Tool Enhancement III",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 73000,
+                    "wood": 73000,
+                    "coal": 14000,
+                    "iron": 3600,
+                    "steel": 840
+                },
+                "research-time-seconds": 1560,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iii": 1,
+                        "camp-expansion-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 100000,
+                    "wood": 100000,
+                    "coal": 20000,
+                    "iron": 5100,
+                    "steel": 1100
+                },
+                "research-time-seconds": 2340,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.0,
+                "power": 5000,
+                "cost": {
+                    "meat": 220000,
+                    "wood": 220000,
+                    "coal": 44000,
+                    "iron": 11000,
+                    "steel": 2500
+                },
+                "research-time-seconds": 6240,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-iii": {
+        "row": 13,
+        "name": "Bandaging III",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.4,
+                "power": 13400,
+                "cost": {
+                    "meat": 210000,
+                    "wood": 210000,
+                    "coal": 43000,
+                    "iron": 10000,
+                    "steel": 2400
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.4,
+                "power": 13400,
+                "cost": {
+                    "meat": 300000,
+                    "wood": 300000,
+                    "coal": 60000,
+                    "iron": 15000,
+                    "steel": 3300
+                },
+                "research-time-seconds": 6300,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 18000,
+                "cost": {
+                    "meat": 640000,
+                    "wood": 640000,
+                    "coal": 120000,
+                    "iron": 32000,
+                    "steel": 7200
+                },
+                "research-time-seconds": 16800,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-iii": {
+        "row": 13,
+        "name": "Trainer Tools III",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 6.8,
+                "power": 12240,
+                "cost": {
+                    "meat": 170000,
+                    "wood": 170000,
+                    "coal": 34000,
+                    "iron": 8600,
+                    "steel": 1900
+                },
+                "research-time-seconds": 3600,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.8,
+                "power": 12240,
+                "cost": {
+                    "meat": 240000,
+                    "wood": 240000,
+                    "coal": 48000,
+                    "iron": 12000,
+                    "steel": 2600
+                },
+                "research-time-seconds": 5400,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 16200,
+                "cost": {
+                    "meat": 510000,
+                    "wood": 510000,
+                    "coal": 100000,
+                    "iron": 25000,
+                    "steel": 5700
+                },
+                "research-time-seconds": 14400,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            }
+        }
+    },
+    "command-tactics-ii": {
+        "row": 14,
+        "name": "Command Tactics II",
+        "stat": "march-queue",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.0,
+                "power": 2700,
+                "cost": {
+                    "meat": 67000,
+                    "wood": 67000,
+                    "coal": 13000,
+                    "iron": 33000,
+                    "steel": 800
+                },
+                "research-time-seconds": 3000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iii": 1,
+                        "trainer-tools-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            }
+        }
+    },
+    "tooling-up-iv": {
+        "row": 15,
+        "name": "Tooling Up IV",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.2,
+                "power": 6000,
+                "cost": {
+                    "meat": 240000,
+                    "wood": 240000,
+                    "coal": 49000,
+                    "iron": 12000,
+                    "steel": 3200
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "command-tactics-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.2,
+                "power": 6000,
+                "cost": {
+                    "meat": 340000,
+                    "wood": 340000,
+                    "coal": 69000,
+                    "iron": 17000,
+                    "steel": 4400
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.5,
+                "power": 7500,
+                "cost": {
+                    "meat": 740000,
+                    "wood": 740000,
+                    "coal": 140000,
+                    "iron": 37000,
+                    "steel": 9600
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            }
+        }
+    },
+    "ward-expansion-iv": {
+        "row": 16,
+        "name": "Ward Expansion IV",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4300.0,
+                "power": 8600,
+                "cost": {
+                    "meat": 62000,
+                    "wood": 62000,
+                    "coal": 12000,
+                    "iron": 3100,
+                    "steel": 800
+                },
+                "research-time-seconds": 4000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4300.0,
+                "power": 8600,
+                "cost": {
+                    "meat": 86000,
+                    "wood": 86000,
+                    "coal": 17000,
+                    "iron": 4300,
+                    "steel": 1100
+                },
+                "research-time-seconds": 6000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 5800.0,
+                "power": 11600,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 37000,
+                    "iron": 9300,
+                    "steel": 2400
+                },
+                "research-time-seconds": 16000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            }
+        }
+    },
+    "camp-expansion-iv": {
+        "row": 16,
+        "name": "Camp Expansion IV",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 9.0,
+                "power": 5850,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 37000,
+                    "iron": 9300,
+                    "steel": 2400
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 9.0,
+                "power": 5850,
+                "cost": {
+                    "meat": 260000,
+                    "wood": 260000,
+                    "coal": 52000,
+                    "iron": 13000,
+                    "steel": 3300
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 12.0,
+                "power": 7800,
+                "cost": {
+                    "meat": 550000,
+                    "wood": 550000,
+                    "coal": 110000,
+                    "iron": 27000,
+                    "steel": 7200
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            }
+        }
+    },
+    "tool-enhancement-iv": {
+        "row": 17,
+        "name": "Tool Enhancement IV",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.2,
+                "power": 6000,
+                "cost": {
+                    "meat": 210000,
+                    "wood": 210000,
+                    "coal": 42000,
+                    "iron": 10000,
+                    "steel": 2800
+                },
+                "research-time-seconds": 10400,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-iv": 1,
+                        "camp-expansion-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.2,
+                "power": 6000,
+                "cost": {
+                    "meat": 290000,
+                    "wood": 290000,
+                    "coal": 59000,
+                    "iron": 14000,
+                    "steel": 3900
+                },
+                "research-time-seconds": 15600,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 1.5,
+                "power": 7500,
+                "cost": {
+                    "meat": 630000,
+                    "wood": 630000,
+                    "coal": 120000,
+                    "iron": 31000,
+                    "steel": 8400
+                },
+                "research-time-seconds": 41600,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-iv": {
+        "row": 18,
+        "name": "Bandaging IV",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 18.0,
+                "power": 18000,
+                "cost": {
+                    "meat": 620000,
+                    "wood": 620000,
+                    "coal": 120000,
+                    "iron": 31000,
+                    "steel": 8000
+                },
+                "research-time-seconds": 28000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 18.0,
+                "power": 18000,
+                "cost": {
+                    "meat": 860000,
+                    "wood": 860000,
+                    "coal": 170000,
+                    "iron": 43000,
+                    "steel": 11000
+                },
+                "research-time-seconds": 42000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 24.0,
+                "power": 24000,
+                "cost": {
+                    "meat": 1800000,
+                    "wood": 1800000,
+                    "coal": 170000,
+                    "iron": 93000,
+                    "steel": 24000
+                },
+                "research-time-seconds": 112000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-iv": {
+        "row": 18,
+        "name": "Trainer Tools IV",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 9.0,
+                "power": 16200,
+                "cost": {
+                    "meat": 490000,
+                    "wood": 490000,
+                    "coal": 99000,
+                    "iron": 24000,
+                    "steel": 6400
+                },
+                "research-time-seconds": 24000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 9.0,
+                "power": 16200,
+                "cost": {
+                    "meat": 690000,
+                    "wood": 690000,
+                    "coal": 130000,
+                    "iron": 34000,
+                    "steel": 8900
+                },
+                "research-time-seconds": 36000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 12.0,
+                "power": 21600,
+                "cost": {
+                    "meat": 1400000,
+                    "wood": 1400000,
+                    "coal": 290000,
+                    "iron": 74000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 96000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            }
+        }
+    },
+    "command-tactics-iii": {
+        "row": 19,
+        "name": "Command Tactics III",
+        "stat": "march-queue",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.0,
+                "power": 2700,
+                "cost": {
+                    "meat": 210000,
+                    "wood": 210000,
+                    "coal": 43000,
+                    "iron": 10000,
+                    "steel": 2400
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-iv": 1,
+                        "trainer-tools-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            }
+        }
+    },
+    "tooling-up-v": {
+        "row": 20,
+        "name": "Tooling Up V",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.6,
+                "power": 8000,
+                "cost": {
+                    "meat": 440000,
+                    "wood": 440000,
+                    "coal": 88000,
+                    "iron": 22000,
+                    "steel": 12000
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "command-tactics-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.6,
+                "power": 8000,
+                "cost": {
+                    "meat": 610000,
+                    "wood": 610000,
+                    "coal": 120000,
+                    "iron": 30000,
+                    "steel": 17000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 2.0,
+                "power": 10000,
+                "cost": {
+                    "meat": 1300000,
+                    "wood": 1300000,
+                    "coal": 260000,
+                    "iron": 66000,
+                    "steel": 38000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            }
+        }
+    },
+    "ward-expansion-v": {
+        "row": 21,
+        "name": "Ward Expansion V",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8600.0,
+                "power": 17200,
+                "cost": {
+                    "meat": 110000,
+                    "wood": 110000,
+                    "coal": 22000,
+                    "iron": 5500,
+                    "steel": 3200
+                },
+                "research-time-seconds": 25000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8600.0,
+                "power": 17200,
+                "cost": {
+                    "meat": 150000,
+                    "wood": 150000,
+                    "coal": 30000,
+                    "iron": 7700,
+                    "steel": 4400
+                },
+                "research-time-seconds": 37500,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 12000.0,
+                "power": 24000,
+                "cost": {
+                    "meat": 330000,
+                    "wood": 330000,
+                    "coal": 66000,
+                    "iron": 16000,
+                    "steel": 9600
+                },
+                "research-time-seconds": 100000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            }
+        }
+    },
+    "camp-expansion-v": {
+        "row": 21,
+        "name": "Camp Expansion V",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.0,
+                "power": 7150,
+                "cost": {
+                    "meat": 330000,
+                    "wood": 330000,
+                    "coal": 66000,
+                    "iron": 16000,
+                    "steel": 9600
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.0,
+                "power": 7150,
+                "cost": {
+                    "meat": 460000,
+                    "wood": 460000,
+                    "coal": 92000,
+                    "iron": 23000,
+                    "steel": 13000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 15.0,
+                "power": 9750,
+                "cost": {
+                    "meat": 990000,
+                    "wood": 990000,
+                    "coal": 190000,
+                    "iron": 49000,
+                    "steel": 28000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            }
+        }
+    },
+    "tool-enhancement-v": {
+        "row": 22,
+        "name": "Tool Enhancement V",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.6,
+                "power": 8000,
+                "cost": {
+                    "meat": 370000,
+                    "wood": 370000,
+                    "coal": 75000,
+                    "iron": 18000,
+                    "steel": 11000
+                },
+                "research-time-seconds": 65000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-v": 1,
+                        "camp-expansion-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.6,
+                "power": 8000,
+                "cost": {
+                    "meat": 520000,
+                    "wood": 520000,
+                    "coal": 100000,
+                    "iron": 26000,
+                    "steel": 15000
+                },
+                "research-time-seconds": 97500,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 2.0,
+                "power": 10000,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 220000,
+                    "iron": 56000,
+                    "steel": 33000
+                },
+                "research-time-seconds": 260000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-v": {
+        "row": 23,
+        "name": "Bandaging V",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 22.4,
+                "power": 22400,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 220000,
+                    "iron": 55000,
+                    "steel": 32000
+                },
+                "research-time-seconds": 175000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 22.4,
+                "power": 22400,
+                "cost": {
+                    "meat": 1500000,
+                    "wood": 1500000,
+                    "coal": 300000,
+                    "iron": 77000,
+                    "steel": 44000
+                },
+                "research-time-seconds": 262500,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 30.0,
+                "power": 30000,
+                "cost": {
+                    "meat": 3300000,
+                    "wood": 3300000,
+                    "coal": 66000,
+                    "iron": 160000,
+                    "steel": 96000
+                },
+                "research-time-seconds": 700000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-v": {
+        "row": 23,
+        "name": "Trainer Tools V",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.2,
+                "power": 20160,
+                "cost": {
+                    "meat": 880000,
+                    "wood": 880000,
+                    "coal": 170000,
+                    "iron": 44000,
+                    "steel": 25000
+                },
+                "research-time-seconds": 150000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.2,
+                "power": 20160,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 240000,
+                    "iron": 61000,
+                    "steel": 35000
+                },
+                "research-time-seconds": 225000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 15.0,
+                "power": 27000,
+                "cost": {
+                    "meat": 2600000,
+                    "wood": 2600000,
+                    "coal": 530000,
+                    "iron": 130000,
+                    "steel": 76000
+                },
+                "research-time-seconds": 600000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            }
+        }
+    },
+    "tooling-up-vi": {
+        "row": 24,
+        "name": "Tooling Up VI",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 1500000,
+                    "wood": 1500000,
+                    "coal": 530000,
+                    "iron": 77000,
+                    "steel": 25000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-v": 1,
+                        "trainer-tools-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 2100000,
+                    "wood": 2100000,
+                    "coal": 430000,
+                    "iron": 100000,
+                    "steel": 35000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 2.5,
+                "power": 12500,
+                "cost": {
+                    "meat": 4600000,
+                    "wood": 4600000,
+                    "coal": 930000,
+                    "iron": 230000,
+                    "steel": 76000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "ward-expansion-vi": {
+        "row": 25,
+        "name": "Ward Expansion VI",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 12000.0,
+                "power": 24000,
+                "cost": {
+                    "meat": 380000,
+                    "wood": 380000,
+                    "coal": 77000,
+                    "iron": 19000,
+                    "steel": 6400
+                },
+                "research-time-seconds": 120000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 12000.0,
+                "power": 24000,
+                "cost": {
+                    "meat": 540000,
+                    "wood": 540000,
+                    "coal": 100000,
+                    "iron": 27000,
+                    "steel": 8900
+                },
+                "research-time-seconds": 180000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 16000.0,
+                "power": 32000,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 230000,
+                    "iron": 58000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 480000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "camp-expansion-vi": {
+        "row": 25,
+        "name": "Camp Expansion VI",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 14.0,
+                "power": 9100,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 230000,
+                    "iron": 58000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 14.0,
+                "power": 9100,
+                "cost": {
+                    "meat": 1600000,
+                    "wood": 1600000,
+                    "coal": 320000,
+                    "iron": 81000,
+                    "steel": 26000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 11700,
+                "cost": {
+                    "meat": 3400000,
+                    "wood": 3400000,
+                    "coal": 690000,
+                    "iron": 170000,
+                    "steel": 57000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "tool-enhancement-vi": {
+        "row": 26,
+        "name": "Tool Enhancement VI",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 1300000,
+                    "wood": 1300000,
+                    "coal": 260000,
+                    "iron": 66000,
+                    "steel": 22000
+                },
+                "research-time-seconds": 312000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vi": 1,
+                        "camp-expansion-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 26
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 1800000,
+                    "wood": 1800000,
+                    "coal": 370000,
+                    "iron": 92000,
+                    "steel": 31000
+                },
+                "research-time-seconds": 468000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 2.5,
+                "power": 12500,
+                "cost": {
+                    "meat": 3900000,
+                    "wood": 3900000,
+                    "coal": 790000,
+                    "iron": 190000,
+                    "steel": 67000
+                },
+                "research-time-seconds": 1248000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "bandaging-vi": {
+        "row": 27,
+        "name": "Bandaging VI",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 27.0,
+                "power": 27000,
+                "cost": {
+                    "meat": 3800000,
+                    "wood": 3800000,
+                    "coal": 770000,
+                    "iron": 190000,
+                    "steel": 64000
+                },
+                "research-time-seconds": 840000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 27
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 27.0,
+                "power": 27000,
+                "cost": {
+                    "meat": 5400000,
+                    "wood": 5400000,
+                    "coal": 1000000,
+                    "iron": 270000,
+                    "steel": 89000
+                },
+                "research-time-seconds": 1260000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 36.0,
+                "power": 36000,
+                "cost": {
+                    "meat": 11000000,
+                    "wood": 11000000,
+                    "coal": 2300000,
+                    "iron": 580000,
+                    "steel": 190000
+                },
+                "research-time-seconds": 3360000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "trainer-tools-vi": {
+        "row": 27,
+        "name": "Trainer Tools VI",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.4,
+                "power": 24120,
+                "cost": {
+                    "meat": 3100000,
+                    "wood": 3100000,
+                    "coal": 620000,
+                    "iron": 150000,
+                    "steel": 51000
+                },
+                "research-time-seconds": 720000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 27
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.4,
+                "power": 24120,
+                "cost": {
+                    "meat": 4300000,
+                    "wood": 4300000,
+                    "coal": 870000,
+                    "iron": 210000,
+                    "steel": 71000
+                },
+                "research-time-seconds": 1080000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 32400,
+                "cost": {
+                    "meat": 9300000,
+                    "wood": 9300000,
+                    "coal": 1800000,
+                    "iron": 460000,
+                    "steel": 150000
+                },
+                "research-time-seconds": 2880000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "tooling-up-vii": {
+        "row": 28,
+        "name": "Tooling Up VII",
+        "stat": "construction-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 3100000,
+                    "wood": 3100000,
+                    "coal": 620000,
+                    "iron": 150000,
+                    "steel": 48000
+                },
+                "research-time-seconds": 840000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-vi": 1,
+                        "trainer-tools-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 28
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 4300000,
+                    "wood": 4300000,
+                    "coal": 870000,
+                    "iron": 210000,
+                    "steel": 67000
+                },
+                "research-time-seconds": 1260000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vii": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 2.5,
+                "power": 12500,
+                "cost": {
+                    "meat": 9300000,
+                    "wood": 9300000,
+                    "coal": 1800000,
+                    "iron": 460000,
+                    "steel": 140000
+                },
+                "research-time-seconds": 3360000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vii": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "ward-expansion-vii": {
+        "row": 29,
+        "name": "Ward Expansion VII",
+        "stat": "infirmary-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 20000.0,
+                "power": 40000,
+                "cost": {
+                    "meat": 770000,
+                    "wood": 770000,
+                    "coal": 150000,
+                    "iron": 38000,
+                    "steel": 12000
+                },
+                "research-time-seconds": 420000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 29
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 20000.0,
+                "power": 40000,
+                "cost": {
+                    "meat": 1000000,
+                    "wood": 1000000,
+                    "coal": 210000,
+                    "iron": 54000,
+                    "steel": 16000
+                },
+                "research-time-seconds": 630000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vii": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 27000.0,
+                "power": 54000,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 36000
+                },
+                "research-time-seconds": 1680000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vii": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "camp-expansion-vii": {
+        "row": 29,
+        "name": "Camp Expansion VII",
+        "stat": "training-capacity",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 14.0,
+                "power": 9100,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 36000
+                },
+                "research-time-seconds": 840000,
+                "requirements": {
+                    "research-items": {
+                        "tooling-up-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 29
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 14.0,
+                "power": 9100,
+                "cost": {
+                    "meat": 3200000,
+                    "wood": 3200000,
+                    "coal": 650000,
+                    "iron": 160000,
+                    "steel": 50000
+                },
+                "research-time-seconds": 1260000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-vii": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 11700,
+                "cost": {
+                    "meat": 6900000,
+                    "wood": 6900000,
+                    "coal": 1300000,
+                    "iron": 340000,
+                    "steel": 100000
+                },
+                "research-time-seconds": 3360000,
+                "requirements": {
+                    "research-items": {
+                        "camp-expansion-vii": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "tool-enhancement-vii": {
+        "row": 30,
+        "name": "Tool Enhancement VII",
+        "stat": "research-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 2600000,
+                    "wood": 2600000,
+                    "coal": 520000,
+                    "iron": 130000,
+                    "steel": 42000
+                },
+                "research-time-seconds": 1092000,
+                "requirements": {
+                    "research-items": {
+                        "ward-expansion-vii": 1,
+                        "camp-expansion-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 1.8,
+                "power": 9000,
+                "cost": {
+                    "meat": 3700000,
+                    "wood": 3700000,
+                    "coal": 740000,
+                    "iron": 180000,
+                    "steel": 58000
+                },
+                "research-time-seconds": 1638000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 2.5,
+                "power": 12500,
+                "cost": {
+                    "meat": 7900000,
+                    "wood": 7900000,
+                    "coal": 1500000,
+                    "iron": 390000,
+                    "steel": 120000
+                },
+                "research-time-seconds": 4368000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vii": 2
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            }
+        }
+    },
+    "bandaging-vii": {
+        "row": 31,
+        "name": "Bandaging VII",
+        "stat": "healing-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 27.0,
+                "power": 27000,
+                "cost": {
+                    "meat": 7700000,
+                    "wood": 7700000,
+                    "coal": 1500000,
+                    "iron": 380000,
+                    "steel": 120000
+                },
+                "research-time-seconds": 2940000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 27.0,
+                "power": 27000,
+                "cost": {
+                    "meat": 10000000,
+                    "wood": 10000000,
+                    "coal": 2100000,
+                    "iron": 540000,
+                    "steel": 160000
+                },
+                "research-time-seconds": 4410000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 36.0,
+                "power": 36000,
+                "cost": {
+                    "meat": 23000000,
+                    "wood": 23000000,
+                    "coal": 4600000,
+                    "iron": 1100000,
+                    "steel": 360000
+                },
+                "research-time-seconds": 11760000,
+                "requirements": {
+                    "research-items": {
+                        "bandaging-vii": 2
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            }
+        }
+    },
+    "trainer-tools-vii": {
+        "row": 31,
+        "name": "Trainer Tools VII",
+        "stat": "training-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.4,
+                "power": 24120,
+                "cost": {
+                    "meat": 6200000,
+                    "wood": 6200000,
+                    "coal": 1200000,
+                    "iron": 310000,
+                    "steel": 96000
+                },
+                "research-time-seconds": 2520000,
+                "requirements": {
+                    "research-items": {
+                        "tool-enhancement-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.4,
+                "power": 24120,
+                "cost": {
+                    "meat": 8700000,
+                    "wood": 8700000,
+                    "coal": 1700000,
+                    "iron": 430000,
+                    "steel": 130000
+                },
+                "research-time-seconds": 3780000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-vii": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 32400,
+                "cost": {
+                    "meat": 18000000,
+                    "wood": 18000000,
+                    "coal": 3700000,
+                    "iron": 930000,
+                    "steel": 280000
+                },
+                "research-time-seconds": 10080000,
+                "requirements": {
+                    "research-items": {
+                        "trainer-tools-vii": 2
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            }
+        }
+    }
+},
+"Economy": {
+    "meat-output-i": {
+        "row": 1,
+        "name": "Meat Output I",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 5400,
+                    "wood": 5400,
+                    "coal": 1000,
+                    "iron": 270,
+                    "steel": 320
+                },
+                "research-time-seconds": 27,
+                "requirements": {
+                    "research-items": {},
+                    "buildings": {
+                        "research-center": 1
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 7500,
+                    "wood": 7500,
+                    "coal": 1500,
+                    "iron": 370,
+                    "steel": 440
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 2
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 16000,
+                    "wood": 16000,
+                    "coal": 3200,
+                    "iron": 810,
+                    "steel": 960
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            }
+        }
+    },
+    "wood-output-i": {
+        "row": 2,
+        "name": "Wood Output I",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 5400,
+                    "wood": 5400,
+                    "coal": 1000,
+                    "iron": 270,
+                    "steel": 320
+                },
+                "research-time-seconds": 27,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 3
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 7500,
+                    "wood": 7500,
+                    "coal": 1500,
+                    "iron": 370,
+                    "steel": 440
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 4
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 16000,
+                    "wood": 16000,
+                    "coal": 3200,
+                    "iron": 810,
+                    "steel": 960
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 5
+                    }
+                }
+            }
+        }
+    },
+    "food-gathering-i": {
+        "row": 3,
+        "name": "Food Gathering I",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 4000,
+                    "wood": 4000,
+                    "coal": 810,
+                    "iron": 200,
+                    "steel": 240
+                },
+                "research-time-seconds": 27,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 5
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 5600,
+                    "wood": 5600,
+                    "coal": 1100,
+                    "iron": 280,
+                    "steel": 330
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 12000,
+                    "wood": 12000,
+                    "coal": 2400,
+                    "iron": 600,
+                    "steel": 720
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 7
+                    }
+                }
+            }
+        }
+    },
+    "wood-gathering-i": {
+        "row": 3,
+        "name": "Wood Gathering I",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 4000,
+                    "wood": 4000,
+                    "coal": 810,
+                    "iron": 200,
+                    "steel": 240
+                },
+                "research-time-seconds": 27,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 5
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 5600,
+                    "wood": 5600,
+                    "coal": 1100,
+                    "iron": 280,
+                    "steel": 330
+                },
+                "research-time-seconds": 40,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 12000,
+                    "wood": 12000,
+                    "coal": 2400,
+                    "iron": 600,
+                    "steel": 720
+                },
+                "research-time-seconds": 108,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 7
+                    }
+                }
+            }
+        }
+    },
+    "coal-output-i": {
+        "row": 4,
+        "name": "Coal Output I",
+        "stat": "coal-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 13000,
+                    "wood": 13000,
+                    "coal": 2700,
+                    "iron": 670,
+                    "steel": 800
+                },
+                "research-time-seconds": 135,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-i": 1,
+                        "wood-gathering-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 6
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 18000,
+                    "wood": 18000,
+                    "coal": 3700,
+                    "iron": 940,
+                    "steel": 1100
+                },
+                "research-time-seconds": 202,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 7
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 2860,
+                "cost": {
+                    "meat": 40000,
+                    "wood": 40000,
+                    "coal": 8100,
+                    "iron": 2000,
+                    "steel": 2400
+                },
+                "research-time-seconds": 540,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            }
+        }
+    },
+    "coal-mining-i": {
+        "row": 5,
+        "name": "Coal Mining I",
+        "stat": "coal-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 10000,
+                    "wood": 10000,
+                    "coal": 2000,
+                    "iron": 500,
+                    "steel": 600
+                },
+                "research-time-seconds": 94,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 7
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 14000,
+                    "wood": 14000,
+                    "coal": 2800,
+                    "iron": 700,
+                    "steel": 840
+                },
+                "research-time-seconds": 141,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 30000,
+                    "wood": 30000,
+                    "coal": 6000,
+                    "iron": 1500,
+                    "steel": 1800
+                },
+                "research-time-seconds": 378,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            }
+        }
+    },
+    "meat-output-ii": {
+        "row": 6,
+        "name": "Meat Output II",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 54000,
+                    "wood": 54000,
+                    "coal": 10000,
+                    "iron": 2700,
+                    "steel": 640
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 75000,
+                    "wood": 75000,
+                    "coal": 15000,
+                    "iron": 3700,
+                    "steel": 890
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 160000,
+                    "wood": 160000,
+                    "coal": 32000,
+                    "iron": 8100,
+                    "steel": 1900
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            }
+        }
+    },
+    "wood-output-ii": {
+        "row": 6,
+        "name": "Wood Output II",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 54000,
+                    "wood": 54000,
+                    "coal": 10000,
+                    "iron": 2700,
+                    "steel": 640
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 8
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 4.0,
+                "power": 1040,
+                "cost": {
+                    "meat": 75000,
+                    "wood": 75000,
+                    "coal": 15000,
+                    "iron": 3700,
+                    "steel": 890
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 9
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 160000,
+                    "wood": 160000,
+                    "coal": 32000,
+                    "iron": 8100,
+                    "steel": 1900
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            }
+        }
+    },
+    "iron-output-i": {
+        "row": 7,
+        "name": "Iron Output I",
+        "stat": "iron-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 13000,
+                    "wood": 13000,
+                    "coal": 2700,
+                    "iron": 670,
+                    "steel": 800
+                },
+                "research-time-seconds": 135,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-ii": 1,
+                        "wood-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 10
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 18000,
+                    "wood": 18000,
+                    "coal": 3700,
+                    "iron": 940,
+                    "steel": 1100
+                },
+                "research-time-seconds": 202,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 2860,
+                "cost": {
+                    "meat": 40000,
+                    "wood": 40000,
+                    "coal": 8100,
+                    "iron": 2000,
+                    "steel": 2400
+                },
+                "research-time-seconds": 540,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            }
+        }
+    },
+    "food-gathering-ii": {
+        "row": 8,
+        "name": "Food Gathering II",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 40000,
+                    "wood": 40000,
+                    "coal": 8100,
+                    "iron": 2000,
+                    "steel": 480
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 56000,
+                    "wood": 56000,
+                    "coal": 11000,
+                    "iron": 2800,
+                    "steel": 670
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 120000,
+                    "wood": 120000,
+                    "coal": 24000,
+                    "iron": 6000,
+                    "steel": 1400
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            }
+        }
+    },
+    "wood-gathering-ii": {
+        "row": 8,
+        "name": "Wood Gathering II",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 40000,
+                    "wood": 40000,
+                    "coal": 8100,
+                    "iron": 2000,
+                    "steel": 480
+                },
+                "research-time-seconds": 300,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 11
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 1000,
+                "cost": {
+                    "meat": 56000,
+                    "wood": 56000,
+                    "coal": 11000,
+                    "iron": 2800,
+                    "steel": 670
+                },
+                "research-time-seconds": 450,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 120000,
+                    "wood": 120000,
+                    "coal": 24000,
+                    "iron": 6000,
+                    "steel": 1400
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            }
+        }
+    },
+    "iron-mining-i": {
+        "row": 9,
+        "name": "Iron Mining I",
+        "stat": "iron-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 10000,
+                    "wood": 10000,
+                    "coal": 2000,
+                    "iron": 500,
+                    "steel": 600
+                },
+                "research-time-seconds": 94,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-ii": 1,
+                        "wood-gathering-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 12
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 14000,
+                    "wood": 14000,
+                    "coal": 2800,
+                    "iron": 700,
+                    "steel": 840
+                },
+                "research-time-seconds": 141,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 30000,
+                    "wood": 30000,
+                    "coal": 6000,
+                    "iron": 1500,
+                    "steel": 1800
+                },
+                "research-time-seconds": 378,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-i": 2
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            }
+        }
+    },
+    "meat-output-iii": {
+        "row": 10,
+        "name": "Meat Output III",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 170000,
+                    "wood": 170000,
+                    "coal": 34000,
+                    "iron": 8600,
+                    "steel": 1900
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 240000,
+                    "wood": 240000,
+                    "coal": 48000,
+                    "iron": 12000,
+                    "steel": 2600
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 510000,
+                    "wood": 510000,
+                    "coal": 100000,
+                    "iron": 25000,
+                    "steel": 5700
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            }
+        }
+    },
+    "coal-output-ii": {
+        "row": 10,
+        "name": "Coal Output II",
+        "stat": "coal-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 130000,
+                    "wood": 130000,
+                    "coal": 27000,
+                    "iron": 6700,
+                    "steel": 1600
+                },
+                "research-time-seconds": 1500,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 37000,
+                    "iron": 9400,
+                    "steel": 2200
+                },
+                "research-time-seconds": 2250,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 400000,
+                    "wood": 400000,
+                    "coal": 81000,
+                    "iron": 20000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 6000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            }
+        }
+    },
+    "wood-output-iii": {
+        "row": 10,
+        "name": "Wood Output III",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 170000,
+                    "wood": 170000,
+                    "coal": 34000,
+                    "iron": 8600,
+                    "steel": 1900
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-i": 1
+                    },
+                    "buildings": {
+                        "research-center": 13
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 240000,
+                    "wood": 240000,
+                    "coal": 48000,
+                    "iron": 12000,
+                    "steel": 2600
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 14
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 510000,
+                    "wood": 510000,
+                    "coal": 100000,
+                    "iron": 25000,
+                    "steel": 5700
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            }
+        }
+    },
+    "iron-output-ii": {
+        "row": 11,
+        "name": "Iron Output II",
+        "stat": "iron-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 130000,
+                    "wood": 130000,
+                    "coal": 27000,
+                    "iron": 6700,
+                    "steel": 1600
+                },
+                "research-time-seconds": 1500,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iii": 1,
+                        "coal-output-ii": 1,
+                        "wood-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 15
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 5.5,
+                "power": 1430,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 37000,
+                    "iron": 9400,
+                    "steel": 2200
+                },
+                "research-time-seconds": 2250,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 400000,
+                    "wood": 400000,
+                    "coal": 81000,
+                    "iron": 20000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 6000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            }
+        }
+    },
+    "food-gathering-iii": {
+        "row": 12,
+        "name": "Food Gathering III",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 120000,
+                    "wood": 120000,
+                    "coal": 25000,
+                    "iron": 6400,
+                    "steel": 1400
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 36000,
+                    "iron": 9000,
+                    "steel": 2000
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 14.5,
+                "power": 1812,
+                "cost": {
+                    "meat": 380000,
+                    "wood": 380000,
+                    "coal": 77000,
+                    "iron": 19000,
+                    "steel": 4300
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            }
+        }
+    },
+    "coal-mining-ii": {
+        "row": 12,
+        "name": "Coal Mining II",
+        "stat": "coal-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 100000,
+                    "wood": 100000,
+                    "coal": 20000,
+                    "iron": 5000,
+                    "steel": 1200
+                },
+                "research-time-seconds": 1050,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 140000,
+                    "wood": 140000,
+                    "coal": 28000,
+                    "iron": 7000,
+                    "steel": 1600
+                },
+                "research-time-seconds": 1575,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 14.5,
+                "power": 1812,
+                "cost": {
+                    "meat": 300000,
+                    "wood": 300000,
+                    "coal": 60000,
+                    "iron": 15000,
+                    "steel": 3600
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            }
+        }
+    },
+    "wood-gathering-iii": {
+        "row": 12,
+        "name": "Wood Gathering III",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 120000,
+                    "wood": 120000,
+                    "coal": 25000,
+                    "iron": 6400,
+                    "steel": 1400
+                },
+                "research-time-seconds": 1200,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 16
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 180000,
+                    "wood": 180000,
+                    "coal": 36000,
+                    "iron": 9000,
+                    "steel": 2000
+                },
+                "research-time-seconds": 1800,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 14.5,
+                "power": 1812,
+                "cost": {
+                    "meat": 380000,
+                    "wood": 380000,
+                    "coal": 77000,
+                    "iron": 19000,
+                    "steel": 4300
+                },
+                "research-time-seconds": 4800,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            }
+        }
+    },
+    "iron-mining-ii": {
+        "row": 13,
+        "name": "Iron Mining II",
+        "stat": "iron-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 100000,
+                    "wood": 100000,
+                    "coal": 20000,
+                    "iron": 5000,
+                    "steel": 1200
+                },
+                "research-time-seconds": 1050,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iii": 1,
+                        "coal-mining-ii": 1,
+                        "wood-gathering-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 17
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 11.0,
+                "power": 1375,
+                "cost": {
+                    "meat": 140000,
+                    "wood": 140000,
+                    "coal": 28000,
+                    "iron": 7000,
+                    "steel": 1600
+                },
+                "research-time-seconds": 1575,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 14.5,
+                "power": 1812,
+                "cost": {
+                    "meat": 300000,
+                    "wood": 300000,
+                    "coal": 60000,
+                    "iron": 15000,
+                    "steel": 3600
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-ii": 2
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            }
+        }
+    },
+    "meat-output-iv": {
+        "row": 14,
+        "name": "Meat Output IV",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 490000,
+                    "wood": 490000,
+                    "coal": 99000,
+                    "iron": 24000,
+                    "steel": 6400
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.5,
+                "power": 1690,
+                "cost": {
+                    "meat": 690000,
+                    "wood": 690000,
+                    "coal": 130000,
+                    "iron": 34000,
+                    "steel": 8900
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 2340,
+                "cost": {
+                    "meat": 1400000,
+                    "wood": 1400000,
+                    "coal": 290000,
+                    "iron": 74000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            }
+        }
+    },
+    "coal-output-iii": {
+        "row": 14,
+        "name": "Coal Output III",
+        "stat": "coal-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 430000,
+                    "wood": 430000,
+                    "coal": 86000,
+                    "iron": 21000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 6000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.5,
+                "power": 1690,
+                "cost": {
+                    "meat": 600000,
+                    "wood": 600000,
+                    "coal": 120000,
+                    "iron": 30000,
+                    "steel": 6700
+                },
+                "research-time-seconds": 9000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 2340,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 250000,
+                    "iron": 64000,
+                    "steel": 14000
+                },
+                "research-time-seconds": 24000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            }
+        }
+    },
+    "wood-output-iv": {
+        "row": 14,
+        "name": "Wood Output IV",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 490000,
+                    "wood": 490000,
+                    "coal": 99000,
+                    "iron": 24000,
+                    "steel": 6400
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-ii": 1
+                    },
+                    "buildings": {
+                        "research-center": 18
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.5,
+                "power": 1690,
+                "cost": {
+                    "meat": 690000,
+                    "wood": 690000,
+                    "coal": 130000,
+                    "iron": 34000,
+                    "steel": 8900
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 19
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 2340,
+                "cost": {
+                    "meat": 1400000,
+                    "wood": 1400000,
+                    "coal": 290000,
+                    "iron": 74000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            }
+        }
+    },
+    "iron-output-iii": {
+        "row": 15,
+        "name": "Iron Output III",
+        "stat": "iron-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 430000,
+                    "wood": 430000,
+                    "coal": 86000,
+                    "iron": 21000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 6000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-iv": 1,
+                        "coal-output-iii": 1,
+                        "wood-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 20
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.5,
+                "power": 1690,
+                "cost": {
+                    "meat": 600000,
+                    "wood": 600000,
+                    "coal": 120000,
+                    "iron": 30000,
+                    "steel": 6700
+                },
+                "research-time-seconds": 9000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 2340,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 250000,
+                    "iron": 64000,
+                    "steel": 14000
+                },
+                "research-time-seconds": 24000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            }
+        }
+    },
+    "food-gathering-iv": {
+        "row": 16,
+        "name": "Food Gathering IV",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.5,
+                "power": 1687,
+                "cost": {
+                    "meat": 370000,
+                    "wood": 370000,
+                    "coal": 74000,
+                    "iron": 18000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.5,
+                "power": 1688,
+                "cost": {
+                    "meat": 520000,
+                    "wood": 520000,
+                    "coal": 100000,
+                    "iron": 26000,
+                    "steel": 6700
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 2250,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 220000,
+                    "iron": 55000,
+                    "steel": 14000
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            }
+        }
+    },
+    "coal-mining-iii": {
+        "row": 16,
+        "name": "Coal Mining III",
+        "stat": "coal-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.5,
+                "power": 1687,
+                "cost": {
+                    "meat": 320000,
+                    "wood": 320000,
+                    "coal": 64000,
+                    "iron": 16000,
+                    "steel": 3600
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.5,
+                "power": 1688,
+                "cost": {
+                    "meat": 450000,
+                    "wood": 450000,
+                    "coal": 90000,
+                    "iron": 22000,
+                    "steel": 5000
+                },
+                "research-time-seconds": 6300,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 2250,
+                "cost": {
+                    "meat": 970000,
+                    "wood": 970000,
+                    "coal": 190000,
+                    "iron": 48000,
+                    "steel": 10000
+                },
+                "research-time-seconds": 16800,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-iii": 2
+                    },
+                    "buildings": {
+                        "research-center-lv": 23
+                    }
+                }
+            }
+        }
+    },
+    "wood-gathering-iv": {
+        "row": 16,
+        "name": "Wood Gathering IV",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.5,
+                "power": 1687,
+                "cost": {
+                    "meat": 370000,
+                    "wood": 370000,
+                    "coal": 74000,
+                    "iron": 18000,
+                    "steel": 4800
+                },
+                "research-time-seconds": 8000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 21
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.5,
+                "power": 1688,
+                "cost": {
+                    "meat": 520000,
+                    "wood": 520000,
+                    "coal": 100000,
+                    "iron": 26000,
+                    "steel": 6700
+                },
+                "research-time-seconds": 12000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 2250,
+                "cost": {
+                    "meat": 1100000,
+                    "wood": 1100000,
+                    "coal": 220000,
+                    "iron": 55000,
+                    "steel": 14000
+                },
+                "research-time-seconds": 32000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            }
+        }
+    },
+    "iron-mining-iii": {
+        "row": 17,
+        "name": "Iron Mining III",
+        "stat": "iron-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 13.5,
+                "power": 1687,
+                "cost": {
+                    "meat": 320000,
+                    "wood": 320000,
+                    "coal": 64000,
+                    "iron": 16000,
+                    "steel": 3600
+                },
+                "research-time-seconds": 4200,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-iv": 1,
+                        "coal-mining-iii": 1,
+                        "wood-gathering-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 22
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 13.5,
+                "power": 1688,
+                "cost": {
+                    "meat": 450000,
+                    "wood": 450000,
+                    "coal": 90000,
+                    "iron": 22000,
+                    "steel": 5000
+                },
+                "research-time-seconds": 6300,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 18.0,
+                "power": 2250,
+                "cost": {
+                    "meat": 970000,
+                    "wood": 970000,
+                    "coal": 190000,
+                    "iron": 48000,
+                    "steel": 10000
+                },
+                "research-time-seconds": 16800,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iii": 2
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            }
+        }
+    },
+    "meat-output-v": {
+        "row": 18,
+        "name": "Meat Output V",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 880000,
+                    "wood": 880000,
+                    "coal": 170000,
+                    "iron": 44000,
+                    "steel": 25000
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 240000,
+                    "iron": 61000,
+                    "steel": 35000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 2600000,
+                    "wood": 2600000,
+                    "coal": 530000,
+                    "iron": 130000,
+                    "steel": 76000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            }
+        }
+    },
+    "coal-output-iv": {
+        "row": 18,
+        "name": "Coal Output IV",
+        "stat": "coal-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 240000,
+                    "iron": 62000,
+                    "steel": 16000
+                },
+                "research-time-seconds": 40000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 1700000,
+                    "wood": 1700000,
+                    "coal": 340000,
+                    "iron": 86000,
+                    "steel": 22000
+                },
+                "research-time-seconds": 60000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 3700000,
+                    "wood": 3700000,
+                    "coal": 740000,
+                    "iron": 180000,
+                    "steel": 48000
+                },
+                "research-time-seconds": 160000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iv": 2
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            }
+        }
+    },
+    "wood-output-v": {
+        "row": 18,
+        "name": "Wood Output V",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 880000,
+                    "wood": 880000,
+                    "coal": 170000,
+                    "iron": 44000,
+                    "steel": 25000
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iii": 1
+                    },
+                    "buildings": {
+                        "research-center": 23
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 240000,
+                    "iron": 61000,
+                    "steel": 35000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 24
+                    }
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 2600000,
+                    "wood": 2600000,
+                    "coal": 530000,
+                    "iron": 130000,
+                    "steel": 76000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-v": 2
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            }
+        }
+    },
+    "iron-output-iv": {
+        "row": 19,
+        "name": "Iron Output IV",
+        "stat": "iron-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 7.0,
+                "power": 1820,
+                "cost": {
+                    "meat": 1200000,
+                    "wood": 1200000,
+                    "coal": 240000,
+                    "iron": 62000,
+                    "steel": 16000
+                },
+                "research-time-seconds": 40000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-v": 1,
+                        "coal-output-iv": 1,
+                        "wood-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 25
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 6.5,
+                "power": 1690,
+                "cost": {
+                    "meat": 1700000,
+                    "wood": 1700000,
+                    "coal": 340000,
+                    "iron": 86000,
+                    "steel": 22000
+                },
+                "research-time-seconds": 60000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iv": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 9.0,
+                "power": 2340,
+                "cost": {
+                    "meat": 3700000,
+                    "wood": 3700000,
+                    "coal": 740000,
+                    "iron": 180000,
+                    "steel": 48000
+                },
+                "research-time-seconds": 160000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iv": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "food-gathering-v": {
+        "row": 20,
+        "name": "Food Gathering V",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 660000,
+                    "wood": 660000,
+                    "coal": 130000,
+                    "iron": 33000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 26
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 920000,
+                    "wood": 920000,
+                    "coal": 180000,
+                    "iron": 46000,
+                    "steel": 26000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-v": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 1900000,
+                    "wood": 1900000,
+                    "coal": 390000,
+                    "iron": 99000,
+                    "steel": 57000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-v": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "coal-mining-iv": {
+        "row": 20,
+        "name": "Coal Mining IV",
+        "stat": "coal-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 930000,
+                    "wood": 930000,
+                    "coal": 180000,
+                    "iron": 46000,
+                    "steel": 12000
+                },
+                "research-time-seconds": 28000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 26
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 1300000,
+                    "wood": 1300000,
+                    "coal": 260000,
+                    "iron": 65000,
+                    "steel": 16000
+                },
+                "research-time-seconds": 42000,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-iv": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 2700000,
+                    "wood": 2700000,
+                    "coal": 550000,
+                    "iron": 130000,
+                    "steel": 36000
+                },
+                "research-time-seconds": 112000,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-iv": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "wood-gathering-v": {
+        "row": 20,
+        "name": "Wood Gathering V",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 660000,
+                    "wood": 660000,
+                    "coal": 130000,
+                    "iron": 33000,
+                    "steel": 19000
+                },
+                "research-time-seconds": 50000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 26
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 920000,
+                    "wood": 920000,
+                    "coal": 180000,
+                    "iron": 46000,
+                    "steel": 26000
+                },
+                "research-time-seconds": 75000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-v": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 1900000,
+                    "wood": 1900000,
+                    "coal": 390000,
+                    "iron": 99000,
+                    "steel": 57000
+                },
+                "research-time-seconds": 200000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-v": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "iron-mining-iv": {
+        "row": 21,
+        "name": "Iron Mining IV",
+        "stat": "iron-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 930000,
+                    "wood": 930000,
+                    "coal": 180000,
+                    "iron": 46000,
+                    "steel": 12000
+                },
+                "research-time-seconds": 28000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-v": 1,
+                        "coal-mining-iv": 1,
+                        "wood-gathering-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 27
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 1300000,
+                    "wood": 1300000,
+                    "coal": 260000,
+                    "iron": 65000,
+                    "steel": 16000
+                },
+                "research-time-seconds": 42000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iv": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 2700000,
+                    "wood": 2700000,
+                    "coal": 550000,
+                    "iron": 130000,
+                    "steel": 36000
+                },
+                "research-time-seconds": 112000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iv": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "meat-output-vi": {
+        "row": 22,
+        "name": "Meat Output VI",
+        "stat": "meat-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 3100000,
+                    "wood": 3100000,
+                    "coal": 620000,
+                    "iron": 150000,
+                    "steel": 51000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 28
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 4300000,
+                    "wood": 4300000,
+                    "coal": 870000,
+                    "iron": 210000,
+                    "steel": 71000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 9300000,
+                    "wood": 9300000,
+                    "coal": 1800000,
+                    "iron": 460000,
+                    "steel": 150000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "coal-output-v": {
+        "row": 22,
+        "name": "Coal Output V",
+        "stat": "coal-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 2200000,
+                    "wood": 2200000,
+                    "coal": 440000,
+                    "iron": 110000,
+                    "steel": 64000
+                },
+                "research-time-seconds": 250000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 28
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 3000000,
+                    "wood": 3000000,
+                    "coal": 610000,
+                    "iron": 150000,
+                    "steel": 89000
+                },
+                "research-time-seconds": 375000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iv": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 6600000,
+                    "wood": 6600000,
+                    "coal": 1300000,
+                    "iron": 330000,
+                    "steel": 190000
+                },
+                "research-time-seconds": 1000000,
+                "requirements": {
+                    "research-items": {
+                        "coal-output-iv": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "wood-output-vi": {
+        "row": 22,
+        "name": "Wood Output VI",
+        "stat": "wood-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 3100000,
+                    "wood": 3100000,
+                    "coal": 620000,
+                    "iron": 150000,
+                    "steel": 51000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-iv": 1
+                    },
+                    "buildings": {
+                        "research-center": 28
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 4300000,
+                    "wood": 4300000,
+                    "coal": 870000,
+                    "iron": 210000,
+                    "steel": 71000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 9300000,
+                    "wood": 9300000,
+                    "coal": 1800000,
+                    "iron": 460000,
+                    "steel": 150000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "wood-output-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "iron-output-v": {
+        "row": 23,
+        "name": "Iron Output V",
+        "stat": "iron-output",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 2200000,
+                    "wood": 2200000,
+                    "coal": 440000,
+                    "iron": 110000,
+                    "steel": 64000
+                },
+                "research-time-seconds": 250000,
+                "requirements": {
+                    "research-items": {
+                        "meat-output-vi": 1,
+                        "coal-output-v": 1,
+                        "wood-output-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 8.0,
+                "power": 2080,
+                "cost": {
+                    "meat": 3000000,
+                    "wood": 3000000,
+                    "coal": 610000,
+                    "iron": 150000,
+                    "steel": 89000
+                },
+                "research-time-seconds": 375000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-v": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 10.0,
+                "power": 2600,
+                "cost": {
+                    "meat": 6600000,
+                    "wood": 6600000,
+                    "coal": 1300000,
+                    "iron": 330000,
+                    "steel": 190000
+                },
+                "research-time-seconds": 1000000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-v": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "food-gathering-vi": {
+        "row": 24,
+        "name": "Food Gathering VI",
+        "stat": "meat-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 38000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 3200000,
+                    "wood": 3200000,
+                    "coal": 650000,
+                    "iron": 160000,
+                    "steel": 53000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 6900000,
+                    "wood": 6900000,
+                    "coal": 1300000,
+                    "iron": 340000,
+                    "steel": 110000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-vi": 1
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "coal-mining-v": {
+        "row": 24,
+        "name": "Coal Mining V",
+        "stat": "coal-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 1600000,
+                    "wood": 1600000,
+                    "coal": 330000,
+                    "iron": 83000,
+                    "steel": 48000
+                },
+                "research-time-seconds": 175000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 67000
+                },
+                "research-time-seconds": 262500,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-v": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 4900000,
+                    "wood": 4900000,
+                    "coal": 990000,
+                    "iron": 240000,
+                    "steel": 140000
+                },
+                "research-time-seconds": 700000,
+                "requirements": {
+                    "research-items": {
+                        "coal-mining-v": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "wood-gathering-vi": {
+        "row": 24,
+        "name": "Wood Gathering VI",
+        "stat": "wood-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 38000
+                },
+                "research-time-seconds": 240000,
+                "requirements": {
+                    "research-items": {
+                        "iron-output-v": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 3200000,
+                    "wood": 3200000,
+                    "coal": 650000,
+                    "iron": 160000,
+                    "steel": 53000
+                },
+                "research-time-seconds": 360000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-vi": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 6900000,
+                    "wood": 6900000,
+                    "coal": 1300000,
+                    "iron": 340000,
+                    "steel": 110000
+                },
+                "research-time-seconds": 960000,
+                "requirements": {
+                    "research-items": {
+                        "wood-gathering-vi": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    },
+    "iron-mining-v": {
+        "row": 25,
+        "name": "Iron Mining V",
+        "stat": "iron-gathering-speed",
+        "troop-type": null,
+        "levels": {
+            "1": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 1600000,
+                    "wood": 1600000,
+                    "coal": 330000,
+                    "iron": 83000,
+                    "steel": 48000
+                },
+                "research-time-seconds": 175000,
+                "requirements": {
+                    "research-items": {
+                        "food-gathering-vi": 1,
+                        "coal-mining-v": 1,
+                        "wood-gathering-vi": 1
+                    },
+                    "buildings": {
+                        "research-center": 30
+                    }
+                }
+            },
+            "2": {
+                "stat-addition": 16.0,
+                "power": 2000,
+                "cost": {
+                    "meat": 2300000,
+                    "wood": 2300000,
+                    "coal": 460000,
+                    "iron": 110000,
+                    "steel": 67000
+                },
+                "research-time-seconds": 262500,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-v": 1
+                    },
+                    "buildings": {}
+                }
+            },
+            "3": {
+                "stat-addition": 21.5,
+                "power": 2687,
+                "cost": {
+                    "meat": 4900000,
+                    "wood": 4900000,
+                    "coal": 990000,
+                    "iron": 240000,
+                    "steel": 140000
+                },
+                "research-time-seconds": 700000,
+                "requirements": {
+                    "research-items": {
+                        "iron-mining-v": 2
+                    },
+                    "buildings": {}
+                }
+            }
+        }
+    }
+},
 "Battle": {
     "weapons-prep-i": {
         "row": 1,
