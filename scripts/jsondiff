@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+import json
+import sys
+from deepdiff import DeepDiff
+from deepdiff.helper import SetOrdered
+
+def load_json(filename):
+	try:
+		with open(filename, 'r') as f:
+			return json.load(f)
+	except Exception as e:
+		print(f"Error loading {filename}: {e}")
+		sys.exit(1)
+
+def convert_to_serializable(obj):
+	"""
+	Recursively convert DeepDiff objects to serializable formats.
+	"""
+	if isinstance(obj, dict):
+		return {k: convert_to_serializable(v) for k, v in obj.items()}
+	elif isinstance(obj, (list, tuple, set)):
+		return [convert_to_serializable(item) for item in obj]
+	elif isinstance(obj, SetOrdered):
+		return list(obj)  # Convert SetOrdered to a list
+	elif hasattr(obj, 'to_dict'):
+		return convert_to_serializable(obj.to_dict())
+	else:
+		return obj
+
+def compare_json(file1, file2):
+	data1 = load_json(file1)
+	data2 = load_json(file2)
+
+	diff = DeepDiff(data1, data2, ignore_order=True)
+	serializable_diff = convert_to_serializable(diff)
+
+	if not serializable_diff:
+		print("The files are identical.")
+	else:
+		print("Differences found:")
+		print(json.dumps(serializable_diff, indent=4))
+
+if __name__ == "__main__":
+	if len(sys.argv) != 3:
+		print("Usage: compare_json.py <file1.json> <file2.json>")
+		sys.exit(1)
+
+	file1 = sys.argv[1]
+	file2 = sys.argv[2]
+	compare_json(file1, file2)
+
