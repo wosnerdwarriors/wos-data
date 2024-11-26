@@ -1,6 +1,6 @@
 {
   "troop-stats": {
-    "Infantry": [
+    "infantry": [
       {
         "Troop Type": "infantry",
         "Troop Level": 1,
@@ -1575,7 +1575,7 @@
         "speed": 11
       }
     ],
-    "Lancer": [
+    "lancer": [
       {
         "Troop Type": "lancer",
         "Troop Level": 1,
@@ -3150,7 +3150,7 @@
         "speed": 11
       }
     ],
-    "Marksman": [
+    "marksman": [
       {
         "Troop Type": "marksman",
         "Troop Level": 1,
