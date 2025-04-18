@@ -1,0 +1,86 @@
+[
+  {
+    "title": "CJ Advanced Strategy - State leaderboards",
+    "embedUrl": "https://www.youtube.com/watch?v=ys6HHdCOep4",
+    "description": "Advanced Guide for Crazy Joe | High Effort Strategy for Top 3 Rank in the state",
+    "categories": ["Guide", "Event:CJ", "Sheepy"]
+  },
+  {
+    "title": "Event Shop Math | What To Buy From Each Event Shop",
+    "embedUrl": "https://www.youtube.com/watch?v=B2doPA09i-c",
+    "description": "How to effectively buy from in game stores",
+    "categories": ["Guide", "Shopping", "Sheepy"]
+  },
+  {
+    "title": "Frostfire Mine Guide and Gameplay Sheepy",
+    "embedUrl": "https://www.youtube.com/watch?v=oJa2efGfwLw",
+    "description": "Frostfire Mine Guide and Gameplay .",
+    "categories": ["Guide", "Combat", "Event:Frostfire","Sheepy"]
+  },
+  {
+    "title": "Gems Value Math",
+    "embedUrl": "https://www.youtube.com/watch?v=0GqAPM3X64g",
+    "description": "Gems Value Math | Lucky Wheel May Not Be The Best.",
+    "categories": ["Guide", "Shopping", "Event:LuckyWheel", "Sheepy"]
+  },
+  {
+    "title": "Rally and Garrison Mechanics",
+    "embedUrl": "https://www.youtube.com/watch?v=Ig2aEU1kaR4",
+    "description": "Everything about rallying and garrisoning heroes, bonuses, refilling etc etc",
+    "categories": ["Sheepy", "Guide","Combat" ]
+  },
+  {
+    "title": "Pack value",
+    "embedUrl": "https://www.youtube.com/watch?v=0F669mPjhYQ",
+    "description": "Why You Should Not Trust the Pack Percentages in Whiteout Survival",
+    "categories": ["Sheepy", "Guide", "Packs", "Shopping"]
+  },
+  {
+    "title": "Why the Final Research Speed Upgrade Is a Waste",
+    "embedUrl": "https://www.youtube.com/watch?v=w2njCO3nZPY",
+    "description": "Why the Final Research Speed Upgrade Is a Waste in Whiteout Survival!",
+    "categories": ["Research", "Sheepy", "Guide", "Upgrading"]
+  },
+  {
+    "title": "Treasure Hunt Math",
+    "embedUrl": "https://www.youtube.com/watch?v=fI8CzKuw8L4",
+    "description": "Treasure Hunt Math: 1000 Pickaxes = How Many Floors?",
+    "categories": ["Sheepy", "Guide", "Event:TreasureHunt"]
+  },
+  {
+    "title": "Finding the best 2 bear times",
+    "embedUrl": "https://www.youtube.com/watch?v=VOI-bvx2sdk",
+    "description": "Google forms and spreadsheet magic to find the 2 times that cover the most amount of people",
+    "categories": ["Management", "Event:Bear"]
+  },
+  {
+    "title": "Timing Multiple Rallies",
+    "embedUrl": "https://www.youtube.com/watch?v=gvQkBTNyQWU",
+    "description": "This is a guide on various techniques to time multiple rallies to land at the same second.",
+    "categories": ["Combat", "Guide", "Event:SVS"]
+  },
+  {
+    "title": "Mercenary Prestige - check x/7 helps per day",
+    "embedUrl": "https://www.youtube.com/watch?v=ETcURf5JUJQ",
+    "description": "How to find how many rally assists/helps you can claim rewards on for the current day",
+    "categories": ["Event:Mercenary Prestige", "Guide"]
+  },
+  {
+    "title": "Alliance Championship - swap lanes in registration phase",
+    "embedUrl": "https://www.youtube.com/watch?v=tWB7ALaHeDg",
+    "description": "How each player can swap their lane during registration phase of alliance championship",
+    "categories": ["Guide", "Alliance Championship"]
+  },
+  {
+    "title": "Experiment - attack vs lethality during bear",
+    "embedUrl": "https://www.youtube.com/watch?v=cjAHTaHVB1I",
+    "description": "Shows bear rallies comparing an attack vs lethality boost showing they appear to be equally as impactful",
+    "categories": ["Experiment", "Data", "Bear"]
+  },
+  {
+    "title": "Send alliance polls to private messages",
+    "embedUrl": "https://www.youtube.com/watch?v=4tIuCiuogUA",
+    "description": "How to send the alliance poll option to people's private messages.",
+    "categories": ["Management", "Guide"]
+  }
+]
