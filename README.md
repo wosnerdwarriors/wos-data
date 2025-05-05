@@ -7,4 +7,4 @@ It includes both
 
 **Contribute at** [https://github.com/wosnerdwarriors/wos-data)](https://github.com/wosnerdwarriors/wos-data)  
 **contribute to the frontend at** [https://github.com/wosnerdwarriors/website-index](https://github.com/wosnerdwarriors/website-index)  
-**See our main website** [https://wosnerds.com/](https://wosnerds.com/)  
+**See our main website at** [https://wosnerds.com/](https://wosnerds.com/)  
