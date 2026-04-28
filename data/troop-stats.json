@@ -1433,6 +1433,19 @@
       },
       {
         "Troop Type": "infantry",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 9,
+        "power": 170,
+        "defense": 30,
+        "lethality": 20,
+        "load": 420,
+        "attack": 21,
+        "health": 29,
+        "speed": 11
+      },
+      {
+        "Troop Type": "infantry",
         "Troop Level": 1,
         "troop level name": "Rookie",
         "FC level": 10,
@@ -1572,6 +1585,19 @@
         "load": 400,
         "attack": 19,
         "health": 27,
+        "speed": 11
+      },
+      {
+        "Troop Type": "infantry",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 10,
+        "power": 178,
+        "defense": 31,
+        "lethality": 21,
+        "load": 420,
+        "attack": 22,
+        "health": 30,
         "speed": 11
       }
     ],
@@ -3008,6 +3034,19 @@
       },
       {
         "Troop Type": "lancer",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 9,
+        "power": 170,
+        "defense": 22,
+        "lethality": 28,
+        "load": 420,
+        "attack": 30,
+        "health": 21,
+        "speed": 11
+      },
+      {
+        "Troop Type": "lancer",
         "Troop Level": 1,
         "troop level name": "Rookie",
         "FC level": 10,
@@ -3147,6 +3186,19 @@
         "load": 400,
         "attack": 28,
         "health": 20,
+        "speed": 11
+      },
+      {
+        "Troop Type": "lancer",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 10,
+        "power": 178,
+        "defense": 24,
+        "lethality": 29,
+        "load": 420,
+        "attack": 31,
+        "health": 23,
         "speed": 11
       }
     ],
@@ -4583,6 +4635,19 @@
       },
       {
         "Troop Type": "marksman",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 9,
+        "power": 170,
+        "defense": 22,
+        "lethality": 29,
+        "load": 420,
+        "attack": 31,
+        "health": 21,
+        "speed": 11
+      },
+      {
+        "Troop Type": "marksman",
         "Troop Level": 1,
         "troop level name": "Rookie",
         "FC level": 10,
@@ -4722,6 +4787,19 @@
         "load": 400,
         "attack": 30,
         "health": 20,
+        "speed": 11
+      },
+      {
+        "Troop Type": "marksman",
+        "Troop Level": 12,
+        "troop level name": "Exalted",
+        "FC level": 10,
+        "power": 178,
+        "defense": 24,
+        "lethality": 30,
+        "load": 420,
+        "attack": 33,
+        "health": 23,
         "speed": 11
       }
     ]
