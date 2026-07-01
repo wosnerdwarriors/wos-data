@@ -8,6 +8,7 @@
 | 4 | castle |
 | 5 | fortress / stronghold area |
 | 6 | facility area |
+| 7 | alliance resource node coverage |
 
 ## Files
 
