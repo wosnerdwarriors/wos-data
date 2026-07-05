@@ -1,7 +1,7 @@
 {
   "svs-data-per-state": {
     "501": {
-      "2024-01-07": {
+      "2024-01-06": {
         "won-prep": false,
         "won-castle": true,
         "had-svs-match": true,
@@ -84,6 +84,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 572
+      },
+      "2025-02-01": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 499
       },
       "2025-03-01": {
         "won-prep": true,
@@ -487,6 +493,12 @@
       }
     },
     "504": {
+      "2024-01-06": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 499
+      },
       "2024-02-03": {
         "won-prep": false,
         "won-castle": false,
@@ -955,7 +967,7 @@
       }
     },
     "507": {
-      "2024-01-07": {
+      "2024-01-06": {
         "won-prep": true,
         "won-castle": true,
         "had-svs-match": true,
@@ -1160,6 +1172,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 549
+      },
+      "2025-04-26": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 499
       }
     },
     "509": {
@@ -1345,7 +1363,7 @@
       }
     },
     "510": {
-      "2024-01-07": {
+      "2024-01-06": {
         "won-prep": true,
         "won-castle": true,
         "had-svs-match": true,
@@ -1772,6 +1790,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 523
+      },
+      "2024-06-22": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 499
       },
       "2024-07-20": {
         "won-prep": false,
@@ -5170,6 +5194,12 @@
         "won-castle": true,
         "had-svs-match": true,
         "opposition-state": 567
+      },
+      "2024-03-02": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 499
       },
       "2024-03-30": {
         "won-prep": false,
@@ -33637,6 +33667,12 @@
       }
     },
     "759": {
+      "2024-04-27": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 769
+      },
       "2024-06-22": {
         "won-prep": false,
         "won-castle": false,
@@ -34652,6 +34688,12 @@
         "won-castle": true,
         "had-svs-match": true,
         "opposition-state": 774
+      },
+      "2024-04-27": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 759
       },
       "2024-06-22": {
         "won-prep": false,
@@ -41815,6 +41857,12 @@
         "had-svs-match": true,
         "opposition-state": 836
       },
+      "2025-05-24": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 861
+      },
       "2025-06-21": {
         "won-prep": true,
         "won-castle": true,
@@ -45463,6 +45511,12 @@
         "had-svs-match": true,
         "opposition-state": 821
       },
+      "2025-02-01": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 879
+      },
       "2025-03-01": {
         "won-prep": true,
         "won-castle": true,
@@ -46134,6 +46188,12 @@
         "won-castle": true,
         "had-svs-match": true,
         "opposition-state": 927
+      },
+      "2025-05-24": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 825
       },
       "2025-06-21": {
         "won-prep": false,
@@ -48451,6 +48511,18 @@
         "had-svs-match": true,
         "opposition-state": 888
       },
+      "2024-10-12": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 915
+      },
+      "2024-11-09": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 885
+      },
       "2024-12-07": {
         "won-prep": false,
         "won-castle": false,
@@ -48463,6 +48535,12 @@
         "had-svs-match": true,
         "opposition-state": 843
       },
+      "2025-02-01": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 855
+      },
       "2025-03-01": {
         "won-prep": false,
         "won-castle": false,
@@ -48474,6 +48552,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 794
+      },
+      "2025-04-26": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 959
       },
       "2025-05-24": {
         "won-prep": true,
@@ -49236,6 +49320,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 855
+      },
+      "2024-11-09": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 879
       },
       "2025-03-01": {
         "won-prep": true,
@@ -52476,6 +52566,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 882
+      },
+      "2024-10-12": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 879
       },
       "2025-02-01": {
         "won-prep": true,
@@ -57562,6 +57658,12 @@
         "won-castle": true,
         "had-svs-match": true,
         "opposition-state": 904
+      },
+      "2025-04-26": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 879
       },
       "2025-05-24": {
         "won-prep": true,
