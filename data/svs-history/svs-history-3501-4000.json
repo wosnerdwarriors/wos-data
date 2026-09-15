@@ -12394,6 +12394,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 3820
+      },
+        "2026-08-16": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 3735
       }
     },
     "3837": {
