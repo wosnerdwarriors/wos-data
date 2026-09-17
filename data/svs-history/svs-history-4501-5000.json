@@ -1,0 +1,20 @@
+{
+  "svs-data-per-state": {
+    "4501": {
+      "2026-09-12": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4492
+      }
+    },
+    "4502": {
+      "2026-09-12": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4499
+      }
+    }
+  }
+}
