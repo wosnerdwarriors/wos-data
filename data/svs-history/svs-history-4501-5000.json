@@ -6,6 +6,12 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 4492
+      },
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4489
       }
     },
     "4502": {
@@ -14,6 +20,548 @@
         "won-castle": false,
         "had-svs-match": true,
         "opposition-state": 4499
+      },
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4535
+      }
+    },
+    "4503": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4533
+      }
+    },
+    "4504": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4529
+      }
+    },
+    "4505": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4538
+      }
+    },
+    "4506": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4493
+      }
+    },
+    "4507": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4515
+      }
+    },
+    "4508": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4495
+      }
+    },
+    "4509": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4514
+      }
+    },
+    "4510": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4516
+      }
+    },
+    "4511": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4537
+      }
+    },
+    "4512": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4547
+      }
+    },
+    "4513": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4525
+      }
+    },
+    "4514": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4509
+      }
+    },
+    "4515": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4507
+      }
+    },
+    "4516": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4510
+      }
+    },
+    "4517": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4534
+      }
+    },
+    "4518": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4499
+      }
+    },
+    "4519": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4524
+      }
+    },
+    "4520": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4544
+      }
+    },
+    "4521": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4523
+      }
+    },
+    "4522": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4536
+      }
+    },
+    "4523": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4521
+      }
+    },
+    "4524": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4519
+      }
+    },
+    "4525": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4513
+      }
+    },
+    "4526": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4543
+      }
+    },
+    "4527": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4551
+      }
+    },
+    "4528": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4549
+      }
+    },
+    "4529": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4504
+      }
+    },
+    "4530": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4550
+      }
+    },
+    "4531": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4545
+      }
+    },
+    "4532": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4546
+      }
+    },
+    "4533": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4503
+      }
+    },
+    "4534": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4517
+      }
+    },
+    "4535": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4502
+      }
+    },
+    "4536": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4522
+      }
+    },
+    "4537": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4511
+      }
+    },
+    "4538": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4505
+      }
+    },
+    "4539": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4542
+      }
+    },
+    "4540": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4541
+      }
+    },
+    "4541": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4540
+      }
+    },
+    "4542": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4539
+      }
+    },
+    "4543": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4526
+      }
+    },
+    "4544": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4520
+      }
+    },
+    "4545": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4531
+      }
+    },
+    "4546": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4532
+      }
+    },
+    "4547": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4512
+      }
+    },
+    "4548": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4553
+      }
+    },
+    "4549": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4528
+      }
+    },
+    "4550": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4530
+      }
+    },
+    "4551": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4527
+      }
+    },
+    "4552": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4490
+      }
+    },
+    "4553": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4548
+      }
+    },
+    "4554": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4570
+      }
+    },
+    "4555": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4564
+      }
+    },
+    "4556": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4559
+      }
+    },
+    "4557": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4558
+      }
+    },
+    "4558": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4557
+      }
+    },
+    "4559": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4556
+      }
+    },
+    "4560": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4568
+      }
+    },
+    "4561": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4565
+      }
+    },
+    "4563": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4567
+      }
+    },
+    "4564": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4555
+      }
+    },
+    "4565": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4561
+      }
+    },
+    "4566": {
+      "2026-10-10": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4569
+      }
+    },
+    "4567": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4563
+      }
+    },
+    "4568": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 4560
+      }
+    },
+    "4569": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4566
+      }
+    },
+    "4570": {
+      "2026-10-10": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 4554
       }
     }
   }
