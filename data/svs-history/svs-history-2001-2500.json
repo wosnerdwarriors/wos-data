@@ -1243,6 +1243,12 @@
         "had-svs-match": true,
         "opposition-state": 1895
       },
+      "2026-01-03": {
+        "won-prep": false,
+        "won-castle": true,
+        "had-svs-match": true,
+        "opposition-state": 2011
+      },
       "2026-04-25": {
         "won-prep": false,
         "won-castle": false,
@@ -1340,6 +1346,12 @@
         "won-castle": true,
         "had-svs-match": true,
         "opposition-state": 1858
+      },
+      "2026-01-03": {
+        "won-prep": true,
+        "won-castle": false,
+        "had-svs-match": true,
+        "opposition-state": 2010
       },
       "2026-01-31": {
         "won-prep": false,
